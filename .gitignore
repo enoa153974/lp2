@@ -1,0 +1,11 @@
+# node_modules（依存ファイル全部）
+node_modules/
+
+# stylelintのキャッシュ
+.stylelintcache
+
+# OSごとの不要ファイル
+.DS_Store
+
+# 環境変数や秘密鍵など
+.env

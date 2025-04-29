@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- meta情報 -->
+        <!--文字エンコード指定-->
+        <meta charset="UTF-8" />
+        <!--ページタイトル-->
+        <title>タイトル</title>
+        <!--ページ説明文-->
+        <meta name="description" content="ページの説明文" />
+        <!--SNSシェア時のタイトル-->
+        <meta property="og:title" content="タイトル" />
+        <!--SNSシェア時の説明文-->
+        <meta property="og:description" content="" />
+        <!--ページの種類指定-->
+        <meta property="og:type" content="article" />
+        <!--ページ正規URL-->
+        <meta property="og:url" content="https://" />
+        <!--SNSシェア時のアイキャッチ画像-->
+        <meta property="og:image" content="https://" />
+        <!--SNSに表示されるサイト名 -->
+        <meta property="og:site_name" content="サイト名" />
+
+        <!--レスポンシブ対応の為の読み込み-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--cssの読み込み-->
+        <link rel="stylesheet" href="/assets/style/style.css" />
+
+        <!--フォントの読み込み -->
+
+        <!--アイコンフォント（fontFontAwesome）の読み込み -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
+    </head>
+
+    <body>
+        <!--ヘッダー（PCではページ上部に常時表示、SPではハンバーガーボタンで開閉できるスライド式）-->
+        <header class="header flex">
+            <div class="header__inner flex item-center">
+                <h1 class="header__logo flex item-center"><a href="#">ロゴ</a></h1>
+
+                <!-- ハンバーガーボタン（SP用） -->
+                <button class="hamburger" aria-label="メニューを開く">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- メニュー -->
+                <nav class="header__nav flex items-center">
+                    <ul class="header__list flex  justify-between">
+                        <li><a href="#アンカーリンク1" class="header__text">ナビ1</a></li>
+                        <li><a href="#アンカーリンク2" class="header__text">ナビ2</a></li>
+                        <li><a href="#アンカーリンク3" class="header__text">ナビ3</a></li>
+                        <li>
+                            <a href="/entry" class="header__btn inline-block"> ボタン </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- メインコンテンツ -->
+        <main class="main flex flex-col">
+            <div class="main__wrapper item-center justify-center">
+                <section>
+                    <h2 class="main__title text-center">メインコンテンツのタイトル</h2>
+                    <p class="main__text text-center">ここにメインコンテンツのテキストが入ります。</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!--フッター-->
+        <footer class="footer">
+            <div class="footer__inner">
+                <p class="footer__text text-center">© 2025サイト名。 All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- jQueryの読み込み(使用する場合のみ) -->
+        <!--<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>-->
+        <!-- jsの読み込み（ES6モジュール構文使用） -->
+        <script type="module" src="./assets/scripts/script.js"></script>
+    </body>
+</html>
