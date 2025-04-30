@@ -16,7 +16,9 @@
   --spacing-base: 1.5rem; /* 24px ,標準の段落間・要素間 */
   --spacing-lg: 2rem; /* 32px ,セクション内の余白 */
   --spacing-xl: 3rem; /* 48px ,セクションの外側、上下の区切り */
-  --header-height:101px;
-  --sp-hedder-height:70px;
+  --header-height: 6.3125rem;
+  --sp-hedder-height: 4.375rem;
+  --footer-height: 6.5rem;
+  --sp-footer-height: 10.3125rem;
   --breakpoint-sp: 47.9375rem;
 }/*# sourceMappingURL=variables.css.map */

@@ -49,8 +49,10 @@ button {
   --spacing-base: 1.5rem; /* 24px ,標準の段落間・要素間 */
   --spacing-lg: 2rem; /* 32px ,セクション内の余白 */
   --spacing-xl: 3rem; /* 48px ,セクションの外側、上下の区切り */
-  --header-height:101px;
-  --sp-hedder-height:70px;
+  --header-height: 6.3125rem;
+  --sp-hedder-height: 4.375rem;
+  --footer-height: 6.5rem;
+  --sp-footer-height: 10.3125rem;
   --breakpoint-sp: 47.9375rem;
 }
 
@@ -167,65 +169,20 @@ body {
 
 /* === PC表示（リキッド対応） === */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
+  position: relative;
+  z-index: 10;
   width: 100%;
-  height: var(--header-height);
-  background-color: var(--bg-color);
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.16);
+  height: auto;
 }
 .header__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: clamp(20rem, 90vw, 75rem);
-  margin: 0 auto;
 }
-.header__logo {
-  width: 30%;
+.header__inner .logo {
   min-width: 8.75rem;
-}
-.header a {
   text-decoration: none;
-}
-.header__nav {
-  width: 70%;
-}
-.header__nav .header__list {
-  width: 100%;
-  list-style: none;
-}
-.header__nav .header__list .header__text::before {
-  content: "";
-}
-.header__nav .header__list li {
-  flex: 1;
-}
-.header__nav .header__list li a {
-  font-size: var(--font-size-base);
-  font-weight: 500;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.header__nav .header__list li a:hover {
-  color: #0a76e2;
-}
-.header__nav .header__list li a.nav__btn {
-  min-width: clamp(8rem, 20vw, 15rem);
-  padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem);
-  margin: 0;
-  font-size: clamp(0.8rem, 1.5vw, var(--font-size-base));
-  font-weight: var(--font-weight-bold);
-  color: #fff;
-  background: linear-gradient(to right, #0271e0, #53a2f0);
-  border: none;
-  border-radius: 2em;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-.header__nav .header__list li a.nav__btn:hover {
-  opacity: 0.6;
 }
 
 .main {
@@ -240,6 +197,41 @@ body {
   max-width: 75rem;
   background-color: pink;
 }
-footer {
+.main .hero {
+  position: relative;
+  z-index: 1;
   background-color: gray;
+}
+.main .pr {
+  background-color: orange;
+}
+.main .about {
+  background-color: gray;
+}
+.main .voices {
+  background-color: orange;
+}
+.main .faq {
+  background-color: gray;
+}
+
+.footer {
+  background-color: gray;
+  width: 100%;
+  height: var(--footer-height);
+  padding: 2rem 0;
+  background-color: #0071ce;
+  color: #fff;
+}
+.footer .footer__info {
+  padding: 0.5rem;
+  gap: var(--spacing-lg);
+}
+.footer .footer__text {
+  padding: 0.5rem;
+}
+.footer__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

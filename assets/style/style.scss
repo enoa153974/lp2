@@ -8,9 +8,12 @@
 @import '../_utility.scss';
 
 //componentの読み込み
-@import '' //sass変数
-    $check-bg: green;
+
+//sass変数
+$check-bg: green;
 $check-bg2: pink;
+$check-sction-bg: gray;
+$check-sction-bg2: orange;
 
 // === 共通スタイル ===
 html,
@@ -22,10 +25,7 @@ body {
     min-height: 100vh;
 }
 
-// === セクションごと ===
-
 // === ヘッダー ===
-
 /* === PC表示（リキッド対応） === */
 .header {
     position: relative;
@@ -39,8 +39,6 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        max-width: clamp(20rem, 90vw, 75rem); // 最小320px〜最大1200px
-        margin: 0 auto;
 
         .logo {
             min-width: 8.75rem;
@@ -62,15 +60,52 @@ body {
         max-width: 75rem; //最大幅1200px
         background-color: $check-bg2;
     }
-
+    // === heroセクション ===
     .hero {
         position: relative;
         z-index: 1;
+        background-color: $check-sction-bg;
+    }
+    // === prセクション ===
+    .pr {
+        background-color: $check-sction-bg2;
+    }
+    // === aboutセクション ===
+    .about {
+        background-color: $check-sction-bg;
+    }
+    // === voicesセクション ===
+    .voices {
+        background-color: $check-sction-bg2;
+    }
+    // === faqセクション ===
+    .faq {
+        background-color: $check-sction-bg;
     }
 }
 // === フッター ===
-footer {
+.footer {
     background-color: gray;
+    width: 100%;
+    height: var(--footer-height);
+    padding: 2rem 0;
+    background-color: #0071ce;
+    color: #fff;
+
+    .footer__info {
+        padding: 0.5rem;
+        gap: var(--spacing-lg);
+    }
+
+    .footer__text {
+        padding: 0.5rem;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 // ============================= ここからスマホ表示 =============================
