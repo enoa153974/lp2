@@ -32,6 +32,7 @@ body {
     z-index: 10;
     width: 100%;
     height: auto;
+    background-color: $check-sction-bg;
 
     // === 内部ラッパー（最大幅＋リキッド） ===
     &__inner {
@@ -49,22 +50,30 @@ body {
 
 // === メインコンテンツ ===
 .main {
-    padding-top: var(--header-height);
-    background-color: $check-bg;
+    position: relative;
+    background-color: white;
     width: 100vw;
-    height: auto;
+    padding: 0 auto;
 
     &__wrapper {
-        margin: 0 auto;
         width: 100%;
         max-width: 75rem; //最大幅1200px
+        margin: 720px auto 0;
         background-color: $check-bg2;
     }
     // === heroセクション ===
     .hero {
-        position: relative;
-        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         background-color: $check-sction-bg;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
     // === prセクション ===
     .pr {
