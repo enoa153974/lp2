@@ -39,9 +39,10 @@ button {
   --bg-color: #fff;
   --font-base: ; /* 本文フォントファミリ */
   --font-heading: ; /* 見出しフォントファミリ（別指定の場合） */
-  --font-size-base: ; /* 本文サイズ（例：1rem） */
-  --font-size-sm: ; /* 小さめ文字（補足やボタンなど） */
-  --font-size-lg: ; /* 見出しなど大きめ文字 */
+  --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
+  --font-size-base: 16px; /* 本文サイズ（例：1rem） */
+  --font-size-lg: 24px; /* 小見出しなど */
+  --font-size-xl: 45px; /* 中見出しなど */
   --font-weight-normal: ; /* 通常のウェイト（400など） */
   --font-weight-bold: ; /* 太字ウェイト（700など） */
   --spacing-xs: 0.5rem; /* 8px ,小さなpaddingや隙間 */
@@ -114,6 +115,10 @@ button {
   flex-direction: column;
 }
 
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
 .items-center {
   align-items: center;
 }
@@ -173,13 +178,13 @@ body {
   z-index: 10;
   width: 100%;
   height: auto;
-  background-color: gray;
 }
 .header__inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: var(--spacing-lg);
 }
 .header__inner .logo {
   min-width: 8.75rem;
@@ -187,40 +192,125 @@ body {
 }
 
 .main {
-  position: relative;
-  background-color: white;
-  width: 100vw;
-  padding: 0 auto;
-}
-.main__wrapper {
-  width: 100%;
-  max-width: 75rem;
-  margin: 720px auto 0;
-  background-color: pink;
-}
-.main .hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: gray;
-}
-.main .hero img {
   width: 100%;
   height: auto;
 }
-.main .pr {
-  background-color: orange;
+.main .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/image/mainVisual.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.main .about {
+.main .hero__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+}
+.main .hero .hero__text {
+  width: 50%;
+  max-width: 364px;
+}
+.main .hero .hero__text h2 {
+  font-size: 50px;
+}
+.main .hero .hero__text p {
+  font-size: 25px;
+}
+.main .hero .hero__empty {
+  width: 50%;
+}
+
+.pr__inner {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: var(--spacing-xl) auto;
+  padding: 44px 48px;
+  background-color: #f0f4ff;
+}
+.pr__inner .pr__btn {
+  min-width: clamp(8rem, 20vw, 15rem); /* 128px～240px */
+  max-height: 58px;
+  padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
+  margin: 0;
+  font-size: clamp(0.8rem, 1.5vw, var(--font-size-base)); /* 最小16px～最大20px */
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #46c4db;
+  border: none;
+  border-radius: 2em; /* ここは好みに応じて固定でも可 */
+  transition: opacity 0.3s ease;
+}
+.pr__inner .pr__btn:last-child {
+  background-color: #5dd5ab;
+}
+.pr__inner .nav__btn:hover {
+  opacity: 0.6; /* ホバー時の透明度 */
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-image: url("/assets/image/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: gray;
 }
-.main .voices {
+.about__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+}
+.about__inner .about__empty {
+  width: 50%;
+}
+.about__inner .about__text {
+  width: 50%;
+  max-width: 429px;
+  color: #fff;
+}
+
+.voices {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.voices .voices__slide {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
   background-color: orange;
 }
-.main .faq {
-  background-color: gray;
+
+.faq {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+}
+.faq .faq__inner {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  margin: 40px auto 0;
+  background-color: orange;
 }
 
 .footer {

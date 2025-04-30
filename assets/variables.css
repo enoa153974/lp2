@@ -6,9 +6,10 @@
   --bg-color: #fff;
   --font-base: ; /* 本文フォントファミリ */
   --font-heading: ; /* 見出しフォントファミリ（別指定の場合） */
-  --font-size-base: ; /* 本文サイズ（例：1rem） */
-  --font-size-sm: ; /* 小さめ文字（補足やボタンなど） */
-  --font-size-lg: ; /* 見出しなど大きめ文字 */
+  --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
+  --font-size-base: 16px; /* 本文サイズ（例：1rem） */
+  --font-size-lg: 24px; /* 小見出しなど */
+  --font-size-xl: 45px; /* 中見出しなど */
   --font-weight-normal: ; /* 通常のウェイト（400など） */
   --font-weight-bold: ; /* 太字ウェイト（700など） */
   --spacing-xs: 0.5rem; /* 8px ,小さなpaddingや隙間 */

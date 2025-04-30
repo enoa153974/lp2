@@ -32,7 +32,6 @@ body {
     z-index: 10;
     width: 100%;
     height: auto;
-    background-color: $check-sction-bg;
 
     // === 内部ラッパー（最大幅＋リキッド） ===
     &__inner {
@@ -40,6 +39,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
+        padding-top: var(--spacing-lg);
 
         .logo {
             min-width: 8.75rem;
@@ -50,48 +50,144 @@ body {
 
 // === メインコンテンツ ===
 .main {
-    position: relative;
-    background-color: white;
-    width: 100vw;
-    padding: 0 auto;
+    width: 100%;
+    height: auto;
 
-    &__wrapper {
-        width: 100%;
-        max-width: 75rem; //最大幅1200px
-        margin: 720px auto 0;
-        background-color: $check-bg2;
-    }
     // === heroセクション ===
     .hero {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
+        position: relative;
+        width: 100%;
         height: 100vh;
-        background-color: $check-sction-bg;
+        background-image: url('/assets/image/mainVisual.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-        img {
+        &__inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
-            height: auto;
+            max-width: 1200px;
+        }
+
+        .hero__text {
+            width: 50%;
+            max-width: 364px;
+
+            h2 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+
+        .hero__empty {
+            width: 50%;
         }
     }
-    // === prセクション ===
-    .pr {
-        background-color: $check-sction-bg2;
-    }
-    // === aboutセクション ===
-    .about {
-        background-color: $check-sction-bg;
-    }
-    // === voicesセクション ===
-    .voices {
-        background-color: $check-sction-bg2;
-    }
-    // === faqセクション ===
-    .faq {
-        background-color: $check-sction-bg;
+}
+
+// === prセクション ===
+.pr {
+    &__inner {
+        width: 100%;
+        height: auto;
+        max-width: 1000px;
+        margin: var(--spacing-xl) auto;
+        padding: 44px 48px;
+        background-color: #f0f4ff;
+
+        .pr__btn {
+            min-width: clamp(8rem, 20vw, 15rem); /* 128px～240px */
+            max-height: 58px;
+            padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
+            margin: 0;
+            font-size: clamp(0.8rem, 1.5vw, var(--font-size-base)); /* 最小16px～最大20px */
+            font-weight: var(--font-weight-bold);
+            color: #fff;
+            white-space: nowrap;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #46c4db;
+            border: none;
+            border-radius: 2em; /* ここは好みに応じて固定でも可 */
+            transition: opacity 0.3s ease;
+        }
+
+        .pr__btn:last-child {
+            background-color: #5dd5ab;
+        }
+        .nav__btn:hover {
+            opacity: 0.6; /* ホバー時の透明度 */
+        }
     }
 }
+// === aboutセクション ===
+.about {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-image: url('/assets/image/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $check-sction-bg;
+
+    &__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 1200px;
+
+        .about__empty {
+            width: 50%;
+        }
+
+        .about__text {
+            width: 50%;
+            max-width: 429px;
+            color: #fff;
+        }
+    }
+}
+// === voicesセクション ===
+.voices {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .voices__slide {
+        width: 100%;
+        max-width: 1200px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: $check-sction-bg2;
+    }
+}
+// === faqセクション ===
+.faq {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+
+    .faq__inner {
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        margin: 40px auto 0;
+        background-color: $check-sction-bg2;
+    }
+}
+
 // === フッター ===
 .footer {
     background-color: gray;
