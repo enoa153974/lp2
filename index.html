@@ -61,45 +61,81 @@
     </head>
 
     <body>
-        <!--ヘッダー（PCではページ上部に常時表示、SPではハンバーガーボタンで開閉できるスライド式）-->
+        <!-- ヘッダー -->
         <header class="header flex">
-            <div class="header__inner flex item-center">
-                <h1 class="header__logo flex item-center"><a href="#">ロゴ</a></h1>
-
-                <!-- ハンバーガーボタン（SP用） -->
-                <button class="hamburger" aria-label="メニューを開く">
-                    <span></span><span></span><span></span>
-                </button>
-
-                <!-- メニュー -->
-                <nav class="header__nav flex items-center">
-                    <ul class="header__list flex justify-between">
-                        <li><a href="#アンカーリンク1" class="header__text">ナビ1</a></li>
-                        <li><a href="#アンカーリンク2" class="header__text">ナビ2</a></li>
-                        <li><a href="#アンカーリンク3" class="header__text">ナビ3</a></li>
-                        <li>
-                            <a href="/entry" class="header__btn inline-block"> ボタン </a>
-                        </li>
-                    </ul>
-                </nav>
+            <!-- ロゴ -->
+            <div class="header__inner flex item-center justify-center">
+                <a href="/" class="logo">
+                    <img src="/assets/image/logo.png" alt="Kira-meki" />
+                </a>
             </div>
         </header>
 
         <!-- メインコンテンツ -->
         <main class="main flex flex-col">
             <div class="main__wrapper item-center justify-center">
-                <section>
-                    <h2 class="main__title text-center">メインコンテンツのタイトル</h2>
-                    <p class="main__text text-center">
-                        ここにメインコンテンツのテキストが入ります。
-                    </p>
+                <!-- heroセクション -->
+                <section class="hero">
+                    <div class="hero__text">
+                        <h2><span> Kirameki</span>Cream</h2>
+                        <p>肌のうるおい、煌めく。</p>
+                    </div>
                 </section>
+
+                <!-- prセクション -->
+                <div class="pr">
+                    <div class="pr__inner">
+                        <h3>キラメキクリーム</h3>
+                        <p>税込4,000円</p>
+                        <a href="" class="pr__button"></a>
+                        <a href="" class="pr__button"></a>
+                    </div>
+                </div>
+
+                <!-- aboutセクション -->
+                <section class="about">
+                    <div class="about__text">
+                        <h2>キャッチコピー</h2>
+                        <h3>お肌を美しく保つ</h3>
+                        <p>ここにテキストが入ります。</p>
+                    </div>
+                </section>
+
+                <!-- voicesセクション -->
+                <section class="voices">
+                    <h2>Voices</h2>
+                    <h3>お客様の声</h3>
+
+                    <!-- スライドメニュー：カード×3 -->
+                    <div class="slide"></div>
+                </section>
+
+                <!-- faqセクション -->
+                <section class="faq">
+                    <h2>Q&A</h2>
+                    <h3>よくあるご質問</h3>
+
+                    <!-- トグルカード：縦並び、カード×5 -->
+                    <div class="faq__inner"></div>
+                </section>
+
+                <!-- prセクション -->
+                <div class="pr">
+                    <div class="pr__inner"></div>
+                </div>
+
+                <!-- scrollボタン：ページTOPまで戻る -->
+                <button class="scroolbutton"></button>
             </div>
         </main>
 
         <!--フッター-->
         <footer class="footer">
             <div class="footer__inner">
+                <a href="/" class="logo">
+                    <img src="/assets/image/logo.png" alt="Kira-meki" />
+                </a>
+                <div class="footer__info"></div>
                 <p class="footer__text text-center">© 2025サイト名。 All rights reserved.</p>
             </div>
         </footer>
