@@ -18,7 +18,7 @@ $check-sction-bg2: orange;
 // === 共通スタイル ===
 html,
 body {
-    font-family: var(--font-base);
+    font-family: var(--font-jp);
     color: var(main-color);
     line-height: 1.6;
     height: 100%;
@@ -78,6 +78,7 @@ body {
 
             h2 {
                 font-size: 50px;
+                letter-spacing: 0.3em;
             }
 
             p {
@@ -101,12 +102,20 @@ body {
         padding: 44px 48px;
         background-color: #f0f4ff;
 
+        h3 {
+            font-size: var(--font-size-lg);
+        }
+
+        p {
+            font-size: var(--font-size-base);
+        }
+
         .pr__btn {
-            min-width: clamp(8rem, 20vw, 15rem); /* 128px～240px */
+            min-width: clamp(8rem, 20vw, 300px); /* 128px～300px */
             max-height: 58px;
             padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
             margin: 0;
-            font-size: clamp(0.8rem, 1.5vw, var(--font-size-base)); /* 最小16px～最大20px */
+            font-size: clamp(0.8rem, 1.5vw, 18px); /* 最小16px～最大18px */
             font-weight: var(--font-weight-bold);
             color: #fff;
             white-space: nowrap;
@@ -153,6 +162,19 @@ body {
             width: 50%;
             max-width: 429px;
             color: #fff;
+
+            h2 {
+                font-size: 38px;
+            }
+
+            h3 {
+                font-size: var(--font-size-lg);
+            }
+
+            p {
+                font-size: 14px;
+                margin-top: var(--spacing-base);
+            }
         }
     }
 }
@@ -162,6 +184,14 @@ body {
     height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
 
     .voices__slide {
         width: 100%;
@@ -178,6 +208,14 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
 
     .faq__inner {
         width: 100%;

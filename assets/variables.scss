@@ -7,8 +7,9 @@
     --bg-color: #fff;
 
     // === フォント ===
-    --font-base: ; /* 本文フォントファミリ */
-    --font-heading: ; /* 見出しフォントファミリ（別指定の場合） */
+    --font-jp: 'Noto Serif JP', serif; //日本語フォント
+    --font-en: 'EB Garamond', serif; //英語フォント
+    --font-logo: 'Marcellus', serif; //ロゴフォント
     --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
     --font-size-base: 16px; /* 本文サイズ（例：1rem） */
     --font-size-lg: 24px; /* 小見出しなど */

@@ -37,8 +37,9 @@ button {
   --accent-color: #f2a541;
   --text-color: #333;
   --bg-color: #fff;
-  --font-base: ; /* 本文フォントファミリ */
-  --font-heading: ; /* 見出しフォントファミリ（別指定の場合） */
+  --font-jp: "Noto Serif JP", serif;
+  --font-en: "EB Garamond", serif;
+  --font-logo: "Marcellus", serif;
   --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
   --font-size-base: 16px; /* 本文サイズ（例：1rem） */
   --font-size-lg: 24px; /* 小見出しなど */
@@ -135,6 +136,14 @@ button {
   justify-content: flex-end;
 }
 
+.en {
+  font-family: var(--font-en);
+}
+
+.font-logo {
+  font-family: var(--font-logo);
+}
+
 .text-center {
   text-align: center;
 }
@@ -165,7 +174,7 @@ button {
 
 html,
 body {
-  font-family: var(--font-base);
+  font-family: var(--font-jp);
   color: var(main-color);
   line-height: 1.6;
   height: 100%;
@@ -218,6 +227,7 @@ body {
 }
 .main .hero .hero__text h2 {
   font-size: 50px;
+  letter-spacing: 0.3em;
 }
 .main .hero .hero__text p {
   font-size: 25px;
@@ -234,12 +244,18 @@ body {
   padding: 44px 48px;
   background-color: #f0f4ff;
 }
+.pr__inner h3 {
+  font-size: var(--font-size-lg);
+}
+.pr__inner p {
+  font-size: var(--font-size-base);
+}
 .pr__inner .pr__btn {
-  min-width: clamp(8rem, 20vw, 15rem); /* 128px～240px */
+  min-width: clamp(8rem, 20vw, 300px); /* 128px～300px */
   max-height: 58px;
   padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
   margin: 0;
-  font-size: clamp(0.8rem, 1.5vw, var(--font-size-base)); /* 最小16px～最大20px */
+  font-size: clamp(0.8rem, 1.5vw, 18px); /* 最小16px～最大18px */
   font-weight: var(--font-weight-bold);
   color: #fff;
   white-space: nowrap;
@@ -283,12 +299,28 @@ body {
   max-width: 429px;
   color: #fff;
 }
+.about__inner .about__text h2 {
+  font-size: 38px;
+}
+.about__inner .about__text h3 {
+  font-size: var(--font-size-lg);
+}
+.about__inner .about__text p {
+  font-size: 14px;
+  margin-top: var(--spacing-base);
+}
 
 .voices {
   width: 100%;
   height: auto;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.voices h2 {
+  font-size: 45px;
+}
+.voices h3 {
+  font-size: 20px;
 }
 .voices .voices__slide {
   width: 100%;
@@ -304,6 +336,12 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+}
+.faq h2 {
+  font-size: 45px;
+}
+.faq h3 {
+  font-size: 20px;
 }
 .faq .faq__inner {
   width: 100%;

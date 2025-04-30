@@ -73,6 +73,14 @@
 }
 
 // === テキスト調整 ===
+.en {
+    font-family: var(--font-en);
+}
+
+.font-logo {
+    font-family: var(--font-logo);
+}
+
 .text-center {
     text-align: center;
 }
