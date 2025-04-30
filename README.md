@@ -34,18 +34,25 @@
 
 - HTML / CSS / JavaScript（Vanilla）
 - reset.css（自作）
--   - Stylelint（設定ファイル .stylelintrc.jsを含む）
+- Stylelint（設定ファイル .stylelintrc.jsを含む）
 
 ## component機能一覧
 
--
--
-- [x] スムーススクロール
+- スライドメニュー
+- トグルカード
+- スムーススクロール
 
 ## コーディングルール
 
 - クラス名はBEM
 
+## 使用フォント
+
+- 日本語フォント:Noto Serif JP（Regular, Medium, SemiBold）
+- 英語フォント:EB Garamond
+- ロゴフォント:Marcellus
+
 ## 📓 メモ
 
+-
 -
