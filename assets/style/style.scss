@@ -8,10 +8,8 @@
 @import '../_utility.scss';
 
 //componentの読み込み
-@import''
-
-//sass変数
-$check-bg: green;
+@import '' //sass変数
+    $check-bg: green;
 $check-bg2: pink;
 
 // === 共通スタイル ===
@@ -30,77 +28,23 @@ body {
 
 /* === PC表示（リキッド対応） === */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2000;
+    position: relative;
+    z-index: 10;
     width: 100%;
-    height: var(--header-height);
-    background-color: var(--bg-color);
-    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 16%);
+    height: auto;
 
     // === 内部ラッパー（最大幅＋リキッド） ===
     &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         max-width: clamp(20rem, 90vw, 75rem); // 最小320px〜最大1200px
         margin: 0 auto;
-    }
 
-    &__logo {
-        width: 30%;
-        min-width: 8.75rem;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    &__nav {
-        width:70%;
-
-        .header__list {
-            width: 100%;
-            list-style: none;
-
-            .header__text {
-                &::before {
-                    content: ''; // 通常時は矢印を表示しない
-                }
-            }
-
-            li{
-                flex:1;
-
-                a {
-                    font-size: var(--font-size-base);
-                    font-weight: 500;
-                    white-space: nowrap;
-                    text-decoration: none;
-                    transition: color 0.3s ease;
-
-                    &:hover {
-                        color: #0a76e2;
-                    }
-
-                    &.nav__btn {
-                        min-width: clamp(8rem, 20vw, 15rem); // 128px～240px
-                        padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); // 上下10〜16px、左右20〜41px
-                        margin: 0;
-                        font-size: clamp(0.8rem, 1.5vw, var(--font-size-base));
-                        font-weight: var(--font-weight-bold);
-                        color: #fff;
-                        background: linear-gradient(to right, #0271e0, #53a2f0);
-                        border: none;
-                        border-radius: 2em;
-                        cursor: pointer;
-                        transition: opacity 0.3s ease;
-
-                        &:hover {
-                            opacity: 0.6;
-                        }
-                    }
-                }
-            }
+        .logo {
+            min-width: 8.75rem;
+            text-decoration: none;
         }
     }
 }
@@ -113,13 +57,15 @@ body {
     height: auto;
 
     &__wrapper {
-        margin:0 auto;
+        margin: 0 auto;
         width: 100%;
         max-width: 75rem; //最大幅1200px
         background-color: $check-bg2;
     }
 
-    .section {
+    .hero {
+        position: relative;
+        z-index: 1;
     }
 }
 // === フッター ===
@@ -128,6 +74,5 @@ footer {
 }
 
 // ============================= ここからスマホ表示 =============================
-@media screen and (max-width:767px){
-    
+@media screen and (max-width: 767px) {
 }
