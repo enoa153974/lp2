@@ -1,23 +1,23 @@
-@charset "UTF-8";
 :root {
   --main-color: #005bac;
   --accent-color: #f2a541;
-  --text-color: #333;
+  --text-color: #000;
   --bg-color: #fff;
   --font-jp: "Noto Serif JP", serif;
   --font-en: "EB Garamond", serif;
   --font-logo: "Marcellus", serif;
-  --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
-  --font-size-base: 16px; /* 本文サイズ（例：1rem） */
-  --font-size-lg: 24px; /* 小見出しなど */
-  --font-size-xl: 45px; /* 中見出しなど */
-  --font-weight-normal: ; /* 通常のウェイト（400など） */
-  --font-weight-bold: ; /* 太字ウェイト（700など） */
-  --spacing-xs: 0.5rem; /* 8px ,小さなpaddingや隙間 */
-  --spacing-sm: 1rem; /* 16px ,基本のmargin・padding */
-  --spacing-base: 1.5rem; /* 24px ,標準の段落間・要素間 */
-  --spacing-lg: 2rem; /* 32px ,セクション内の余白 */
-  --spacing-xl: 3rem; /* 48px ,セクションの外側、上下の区切り */
+  --font-size-sm: 15px;
+  --font-size-base: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 45px;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-base: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
   --header-height: 6.3125rem;
   --sp-hedder-height: 4.375rem;
   --footer-height: 6.5rem;

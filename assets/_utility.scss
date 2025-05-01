@@ -22,19 +22,22 @@
 .pt-4 {
     padding-top: 1rem;
 }
+
 .pb-4 {
     padding-bottom: 1rem;
 }
+
 .pl-4 {
     padding-left: 1rem;
 }
+
 .pr-4 {
     padding-right: 1rem;
 }
 
 .px-4 {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 } // 左右まとめて
 .py-4 {
     padding-top: 1rem;
@@ -45,6 +48,7 @@
 .w-full {
     width: 100%;
 }
+
 .max-w-4xl {
     max-width: 64rem;
 } // 1024px（例）
@@ -53,21 +57,27 @@
 .flex {
     display: flex;
 }
+
 .flex-col {
     flex-direction: column;
 }
+
 .flex-reverse {
     flex-direction: row-reverse;
 }
+
 .items-center {
     align-items: center;
 }
+
 .justify-center {
     justify-content: center;
 }
+
 .justify-between {
     justify-content: space-between;
 }
+
 .justify-end {
     justify-content: flex-end;
 }
@@ -84,12 +94,15 @@
 .text-center {
     text-align: center;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
+
 .font-bold {
     font-weight: 700;
 }
@@ -98,9 +111,11 @@
 .hidden {
     display: none;
 }
+
 .block {
     display: block;
 }
+
 .inline-block {
     display: inline-block;
 }

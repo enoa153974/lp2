@@ -3,26 +3,28 @@
     // === 色 ===
     --main-color: #005bac;
     --accent-color: #f2a541;
-    --text-color: #333;
+    --text-color: #000;
     --bg-color: #fff;
 
     // === フォント ===
     --font-jp: 'Noto Serif JP', serif; //日本語フォント
     --font-en: 'EB Garamond', serif; //英語フォント
     --font-logo: 'Marcellus', serif; //ロゴフォント
-    --font-size-sm: 15px; /* 小さめ文字（補足やボタンなど） */
-    --font-size-base: 16px; /* 本文サイズ（例：1rem） */
-    --font-size-lg: 24px; /* 小見出しなど */
-    --font-size-xl: 45px; /* 中見出しなど */
-    --font-weight-normal: ; /* 通常のウェイト（400など） */
-    --font-weight-bold: ; /* 太字ウェイト（700など） */
+    --font-size-sm: 15px; // 小さめ文字（補足やボタンなど）
+    --font-size-base: 16px; // 本文サイズ（例：1rem）
+    --font-size-lg: 24px; // 小見出しなど
+    --font-size-xl: 45px; // 中見出しなど
+
+    --font-weight-normal: 400; // 通常のウェイト（400など）
+    --font-weight-semibold: 600; // 中字のウェイト（400など）
+    --font-weight-bold: 700; // 太字ウェイト（700など）
 
     // === 余白・サイズ ===
-    --spacing-xs: 0.5rem; /* 8px ,小さなpaddingや隙間 */
-    --spacing-sm: 1rem; /* 16px ,基本のmargin・padding */
-    --spacing-base: 1.5rem; /* 24px ,標準の段落間・要素間 */
-    --spacing-lg: 2rem; /* 32px ,セクション内の余白 */
-    --spacing-xl: 3rem; /* 48px ,セクションの外側、上下の区切り */
+    --spacing-xs: 0.5rem; // 8px ,小さなpaddingや隙間
+    --spacing-sm: 1rem; // 16px ,基本のmargin・padding
+    --spacing-base: 1.5rem; // 24px ,標準の段落間・要素間
+    --spacing-lg: 2rem; // 32px ,セクション内の余白
+    --spacing-xl: 3rem; // 48px ,セクションの外側、上下の区切り
 
     --header-height: 6.3125rem; //PC表示のヘッダーの高さ(101px)
     --sp-hedder-height: 4.375rem; //スマホ表示のヘッダーの高さ(70px)

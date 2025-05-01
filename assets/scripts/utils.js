@@ -40,16 +40,16 @@
 【smoothScrollToTarget('#section2', scrollOffset;】で使用*/
 
 export function smoothScrollToTarget(selector, offset = { pc: 101, sp: 70 }) {
-    const target = document.querySelector(selector);
+    const target = document.querySelector(selector);//対象の要素を取得
     if (!target) return;
 
         const isMobile = window.innerWidth <= 768;
-        const headerOffset = isMobile ? offset.sp : offset.pc;
+        const headerOffset = isMobile ? offset.sp : offset.pc;//モバイルかどうか判別し、オフセット量を決定
 
         const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - headerOffset;
+        const offsetPosition = elementPosition - headerOffset;//対象要素の位置をページ全体のスクロール位置で取得
 
-        window.scrollTo({
+        window.scrollTo({//アニメーション付きで決定した位置までスクロールさせる処理
             top: offsetPosition,
             behavior: "smooth"
         });

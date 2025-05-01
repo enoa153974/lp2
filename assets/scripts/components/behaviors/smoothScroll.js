@@ -20,3 +20,17 @@ import { smoothScrollToTarget } from '../../utils.js';
                 });
             });
     }
+
+//ページ下層に配置したscrollbuttonを押すとページトップに戻る処理
+export function scrollToTopBtn(){
+    const scrollOffset = {
+        pc:101,
+        sp:70
+    };
+
+    const topButton = document.getElementById('scrollToTopBtn');
+
+    topButton.addEventListener('click', () => {
+        smoothScrollToTarget('html',scrollOffset); // ← ページ最上部へスクロール
+    });
+}
