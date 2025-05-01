@@ -1,38 +1,61 @@
-@charset "UTF-8";
 .slider {
-  width: 1500px;
-  gap: 1rem;
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: pink;
+    width: 100%;
+    height: auto;
+    max-width: 1156px;
+    margin: 40px auto 0;
+    background-color: pink;
 }
-.slider .slider__wrapper {
-  width: 960px; /* 320px × 3 */
-  max-width: 100%;
-  overflow: hidden;
+
+.slider__wrapper {
+    width: 980px; /* 320px × 3 */
+    max-width: 100%;
+    overflow: hidden;
 }
-.slider .slider__wrapper .slider__track {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  background-color: black;
-  transition: transform 0.4s ease;
+
+.slider__track {
+    width: 980px;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
 }
-.slider .slider__wrapper .slider__track .card {
-  width: 320px;
-  height: 400px;
-  flex-shrink: 0;
-  margin: 0 8px;
-  background: #dbf7f9;
-  font-size: 2rem;
-  border-radius: 10px;
+
+.card {
+    width: 300px;
+    height: 388px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    padding: 40px 16px;
+    background: #dbf7f9;
+    font-size: 2rem;
 }
-.slider .slider__wrapper .slider__track .card img {
-  width: 100px;
-  height: auto;
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
 }
-.slider .slider__wrapper .slider__track .card p {
-  font-size: var(--font-size-base);
+
+.card p {
+    font-size: var(--font-size-base);
+}
+
+.prev {
+    margin: auto auto auto 0;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background-color: #00afbf;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.next {
+    margin: auto 0 auto auto;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background-color: #00afbf;
+    font-size: 24px;
+    border-radius: 50%;
 }
 
 /* レスポンシブ対応（1枚表示）
@@ -45,4 +68,4 @@
         width: 320px;
         margin: 0;
     }
-} *//*# sourceMappingURL=slider.css.map */
+} */ /*# sourceMappingURL=slider.css.map */
