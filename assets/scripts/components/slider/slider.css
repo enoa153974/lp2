@@ -27,10 +27,33 @@
     font-size: 2rem;
 }
 
-.card img {
+.avatar__wrapper {
     width: 100px;
-    height: auto;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
     margin: 0 auto;
+}
+
+.avatar-01,
+.avatar-02,
+.avatar-03,
+.avatar-04,
+.avatar-05,
+.avatar-06 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1.3) translateX(-10%) translateY(8%); /* アップ倍率、画像トリミング位置調整 */
+}
+
+.avatar-02 {
+    transform: scale(1.5) translateX(4%) translateY(13%); /* アップ倍率、画像トリミング位置調整 */
+}
+
+.avatar-03 {
+    transform: scale(1.6) translateX(-6%) translateY(13%); /* アップ倍率、画像トリミング位置調整 */
 }
 
 .card p {
