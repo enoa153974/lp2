@@ -8,12 +8,13 @@
 @import '../_utility.scss';
 
 //componentの読み込み
+@import '../scripts/components/slider/slider.scss';
 
 //sass変数
-$check-bg: green;//sass変数$check-bg//sass変数$check-bg//sass変数$check-bg//sass変数$check-bg//sass変数$check-bg //sass変数$check-bg
-$check-bg2: pink;//sass変数$check-bg$check-bg2//sass変数$check-bg$check-bg2//sass変数$check-bg$check-bg2//sass変数$check-bg$check-bg2$check-bg2
-$check-sction-bg: gray;$check-sction-bg$check-sction-bg$check-sction-bg$check-sction-bg
-$check-sction-bg2: orange;$check-sction-bg2$check-sction-bg2$check-sction-bg2
+$check-bg: green;
+$check-bg2: pink;
+$check-sction-bg: gray;
+$check-sction-bg2: orange;
 
 // === 共通スタイル ===
 html,
