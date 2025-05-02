@@ -9,37 +9,35 @@ export function slider() {
     const nextBtn = qs('.next');
     const dotsContainer = qs('.slider__dots');
 
-    const visibleCount = 3;
-    const totalGroups = Math.ceil(cards.length / visibleCount);
+    let visibleCount = getVisibleCount();
+    let totalGroups = Math.ceil(cards.length / visibleCount);
     let currentIndex = 0;
     let slideCounter = 0;
 
-    // === ドット生成（2つだけ） ===
+    function getVisibleCount() {
+        return window.innerWidth <= 768 ? 1 : 3;
+    }
+
+    // === ドット生成 ===
     function createDots() {
         dotsContainer.innerHTML = '';
+        totalGroups = Math.ceil(cards.length / visibleCount);
+
         for (let i = 0; i < totalGroups; i++) {
             const dot = createElement('button', 'slider__dot');
             if (i === 0) addClass(dot, 'active');
 
             dot.addEventListener('click', () => {
                 const groupIndex = i * visibleCount;
+                const diff = (groupIndex - slideCounter + cards.length) % cards.length;
 
-                console.log('ドットクリック:', i, '→ target slide index:', groupIndex);
-                console.log('現在のスライド位置:', slideCounter);
-
-                let safeCounter = 0; // 安全装置（無限ループ対策）
-
-                while (slideCounter !== groupIndex) {
-                    if (slideCounter < groupIndex) {
-                        rotateArrayLeft(cards);
-                        slideCounter++;
-                    } else {
-                        rotateArrayRight(cards);
-                        slideCounter--;
-                    }
+                for (let j = 0; j < diff; j++) {
+                    rotateArrayLeft(cards);
+                    slideCounter = (slideCounter + 1) % cards.length;
+                    reRenderCards();
                 }
+
                 currentIndex = i;
-                reRenderCards();
             });
 
             dotsContainer.appendChild(dot);
@@ -49,32 +47,27 @@ export function slider() {
     // === ドット更新 ===
     function updateDots() {
         const dots = qsa('.slider__dot');
-        const activeDotIndex = Math.floor(slideCounter / visibleCount);
+        const activeDotIndex = Math.floor(slideCounter / visibleCount) % totalGroups;
         dots.forEach(dot => removeClass(dot, 'active'));
         if (dots[activeDotIndex]) addClass(dots[activeDotIndex], 'active');
     }
 
-    // === スライダー位置更新
     function updateSlider() {
         const cardWidth = cards[0].offsetWidth;
         const offset = 0;
         track.style.transform = `translateX(-${offset}px)`;
     }
 
-    // === 配列を1枚分ローテート
     function rotateArrayLeft(arr) {
         const first = arr.shift();
         arr.push(first);
-        slideCounter = (slideCounter + 1) % cards.length;
     }
 
     function rotateArrayRight(arr) {
         const last = arr.pop();
         arr.unshift(last);
-        slideCounter = (slideCounter - 1 + cards.length) % cards.length;
     }
 
-    // === DOM再構築（スライド再描画）
     function reRenderCards() {
         track.innerHTML = '';
         cards.forEach(card => track.appendChild(card));
@@ -82,19 +75,29 @@ export function slider() {
         updateDots();
     }
 
-    // === イベント
     nextBtn.addEventListener('click', () => {
         rotateArrayLeft(cards);
+        slideCounter = (slideCounter + 1) % cards.length;
         reRenderCards();
     });
 
     prevBtn.addEventListener('click', () => {
         rotateArrayRight(cards);
+        slideCounter = (slideCounter - 1 + cards.length) % cards.length;
         reRenderCards();
     });
 
-    window.addEventListener('resize', updateSlider);
+    window.addEventListener('resize', () => {
+        visibleCount = getVisibleCount();
+        totalGroups = Math.ceil(cards.length / visibleCount);
+        createDots();
+        updateDots();
+        updateSlider();
+    });
+
     window.addEventListener('load', () => {
+        visibleCount = getVisibleCount();
+        totalGroups = Math.ceil(cards.length / visibleCount);
         updateSlider();
         createDots();
         updateDots();
