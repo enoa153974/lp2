@@ -1,0 +1,138 @@
+/* === ユーティリティクラス === */
+
+/* === 余白系 === */
+/* margin */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+/* padding */
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.pl-4 {
+    padding-left: 1rem;
+}
+
+.pr-4 {
+    padding-right: 1rem;
+}
+
+/* padding(左右・上下) */
+.px-4 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* 幅 */
+.w-full {
+    width: 100%;
+}
+
+.max-w-4xl {
+    max-width: 64rem;
+}
+
+/* display系 */
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* 配置系 */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+
+/* フォント系 */
+.jp{
+    font-family: var(--font-jp);
+}
+
+.en {
+    font-family: var(--font-en);
+}
+
+.font-logo {
+    font-family: var(--font-logo);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-normal {
+    font-weight: var(--font-weight-normal);
+}
+
+.font-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+    font-weight: var(--font-weight-bold);
+}
+
