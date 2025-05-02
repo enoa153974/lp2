@@ -1,7 +1,7 @@
 @import url('/assets/style/reset.css');
 @import url('/assets/variables.css');
 @import url('/assets/scripts/components/slider/slider.css');
-
+@import url('/assets/scripts/components/accordion/accordion.css');
 .mt-4 {
     margin-top: 1rem;
 }
@@ -159,7 +159,7 @@ body {
     background-image: url('/assets/image/mainVisual.jpg');
     background-repeat: no-repeat;
     background-position: center;
-  　 background-size: cover;
+    background-size: cover;
 }
 
 .main .hero__inner {
@@ -323,11 +323,11 @@ body {
     font-weight: var(--font-weight-semibold);
 }
 
-
 .faq .faq__inner {
     width: 100%;
+    height: auto;
     max-width: 600px;
-    height: 500px;
+    min-height: 500px;
     margin: 40px auto 0;
     background-color: orange;
 }

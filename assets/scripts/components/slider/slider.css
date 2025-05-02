@@ -92,6 +92,27 @@
     border-radius: 50%;
 }
 
+/* == スライド下ドット == */
+.slider__dots {
+    gap: 0.5rem;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.slider__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider__dot.active {
+    background-color: #00afbf;
+}
+
 /* レスポンシブ対応（1枚表示）
 @media (max-width: 768px) {
     .slider__wrapper {

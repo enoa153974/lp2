@@ -24,6 +24,16 @@
         export function addClass(element, className) {
             element.classList.add(className);
         }
+    // 新しい要素(element)を作成する関数
+    //tagNameの要素をclassNameかtextを付けて作成する（tagName,）className or text)
+    //【createElement(element, className か text) 】で使用
+        export function createElement(tagName, className = '', text = '') {
+            const el = document.createElement(tagName);
+            if (className) el.className = className;
+            if (text) el.textContent = text;
+            return el;
+        }
+
     //指定した要素(element)に対して、classNameを外す関数（こっちは外すのみ）
     //【removeClass(element, className) 】で使用
         export function removeClass(element, className) {
