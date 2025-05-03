@@ -205,8 +205,7 @@ body {
 .voices .voices__slide {
     width: 100%;
     max-width: 1200px;
-    height: 500px;
-    margin: 38px auto 0;
+    height: auto;
     background-color: orange;
 }
 
@@ -221,11 +220,13 @@ body {
 .faq h2 {
     font-size: 45px;
     font-weight: var(--font-weight-bold);
+    line-height: 1.2;
 }
 
 .faq h3 {
     font-size: 20px;
     font-weight: var(--font-weight-semibold);
+    line-height: 2.3;
 }
 
 .faq .faq__inner {
@@ -233,15 +234,18 @@ body {
     height: auto;
     max-width: 600px;
     min-height: 500px;
-    margin: 40px auto 0;
-    background-color: orange;
+    margin: 35px auto 0;
+}
+
+.pr-second .pr__inner{
+    margin-bottom: 0;
 }
 
 .scroolbutton {
     width: 40px;
     height: 40px;
     padding: 12px 13px;
-    margin-left: 90%;
+    margin-left: 87.3%;
     color: #fff;
     background-color: #0071ce;
 }
@@ -257,14 +261,20 @@ body {
 .footer .footer__info {
     gap: var(--spacing-lg);
     padding: 0.5rem;
+    font-size: 14px;
+    margin-left: 75px;
 }
 
 .footer .footer__text {
     padding: 0.5rem;
+    font-size: 12px;
+    line-height: 2.5;
 }
 
 .footer__inner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 32px;
+    line-height: 2;
 }
