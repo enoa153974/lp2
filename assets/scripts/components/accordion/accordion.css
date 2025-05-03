@@ -1,5 +1,5 @@
 .accordion {
-    background: linear-gradient(to right, #e9f8f3, #e2f1f9);
+    background:#fff;
     padding: 24px 25px; 
     margin-bottom: 24px;
     width: 100%;
@@ -67,4 +67,5 @@
 .accordion.open .icon {
     transform: rotate(180deg);
 }
+
 

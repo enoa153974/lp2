@@ -75,7 +75,7 @@
         <main class="main flex flex-col">
             <!-- heroセクション -->
             <section class="hero flex">
-                <div class="hero__inner flex justify-center">
+                <div class="hero__inner flex justify-center sm:flex-col">
                     <div class="hero__text flex flex-col">
                         <h2 class="font-logo"><span class="break block"> Kirameki</span>Cream</h2>
                         <p>肌のうるおい、煌めく。</p>
@@ -86,10 +86,10 @@
 
             <!-- prセクション -->
             <div class="pr flex item-center justify-center">
-                <div class="pr__inner flex">
+                <div class="pr__inner flex sm:flex-col">
                     <div class="flex flex-col">
-                        <h3>キラメキクリーム</h3>
-                        <p>税込<span class="text__space"> </span>4,000円</p>
+                        <h3 class="sm:text-center">キラメキクリーム</h3>
+                        <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
                     </div>
                     <a href="" class="pr__btn inline-block text-center">オンラインショップへ</a>
                     <a href="" class="pr__btn inline-block text-center">購入する</a>
@@ -100,13 +100,13 @@
             <section class="about flex">
                 <div class="about__inner flex flex-reverse justify-center">
                     <div class="about__text flex flex-col">
-                        <h2 class="en">Keep Your Skin Beautiful.</h2>
-                        <h3>お肌を美しく保つ</h3>
+                        <h2 class="en sm:text-center">Keep Your Skin Beautiful.</h2>
+                        <h3 class="sm:text-center">お肌を美しく保つ</h3>
                         <p>
                             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                         </p>
                     </div>
-                    <div class="about__empty"></div>
+                    <div class="about__empty sm:hidden"></div>
                 </div>
             </section>
 
@@ -293,10 +293,10 @@
 
             <!-- prセクション -->
             <div class="pr-second flex item-center justify-center">
-                <div class="pr__inner flex ">
+                <div class="pr__inner flex sm:flex-col">
                     <div class="flex flex-col">
-                        <h3>キラメキクリーム</h3>
-                        <p>税込<span class="text__space"> </span>4,000円</p>
+                        <h3 class="sm:text-center">キラメキクリーム</h3>
+                        <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
                     </div>
                     <a href="" class="pr__btn inline-block text-center">オンラインショップへ</a>
                     <a href="" class="pr__btn inline-block text-center">購入する</a>
@@ -311,11 +311,11 @@
 
         <!--フッター-->
         <footer class="footer flex item-center">
-            <div class="footer__inner flex item-center justify-between">
+            <div class="footer__inner flex item-center justify-between  sm:flex-col">
                 <a href="/" class="logo">
-                    <img src="/assets/image/footer__logo.png" alt="Kira-meki" />
+                    <img src="/assets/image/footer__logo.png" alt="Kira-meki">
                 </a>
-                <div class="footer__info flex item-center">
+                <div class="footer__info flex item-center sm:justify-between">
                     <p>会社概要</p>
                     <p>個人情報保護ポリシー</p>
                     <p>お問い合わせ</p>

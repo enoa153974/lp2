@@ -30,7 +30,5 @@
 
     /* === ヘッダー・フッターの高さ === */
     --header-height: 6.3125rem;       /* PCヘッダーの高さ（約101px）*/
-    --sp-hedder-height: 4.375rem;     /* スマホヘッダーの高さ（約70px） */
     --footer-height: 6.5rem;          /* PCフッターの高さ（約104px）*/
-    --sp-footer-height: 10.3125rem;   /* スマホフッターの高さ（約165px）*/
 }
