@@ -14,7 +14,7 @@
 .slider__track {
     width: 980px;
     margin: 0 auto;
-    transition: transform 0.4s ease;
+    transition: transform 0.8s ease;
 }
 
 .card {
@@ -119,8 +119,11 @@
     background-color: #00afbf;
 }
 
-/* レスポンシブ対応（1枚表示）
+/* レスポンシブ対応（1枚表示）*/
 @media (max-width: 768px) {
+    .slider{
+        margin-top: 36px;
+    }
     .slider__wrapper {
         width: 320px;
     }
@@ -129,4 +132,27 @@
         width: 320px;
         margin: 0;
     }
-} */
+
+    .prev{
+        width: 32px;
+        height: 32px;
+        margin-right: 7px;
+    } 
+
+    .next{
+        width: 32px;
+        height: 32px;
+        margin-left: 7px;
+    } 
+    
+    .slider__wrapper {
+        max-width: 280px;
+    }
+    
+    .slider__track {
+        width: 980px;
+        margin: 0 auto;
+        transition: transform 0.8s ease;
+    }
+    
+}

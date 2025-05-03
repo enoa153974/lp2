@@ -24,7 +24,7 @@
 .accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.3s ease;
 }
 
 .accordion.open .accordion__content {
@@ -53,15 +53,16 @@
     transition: transform 0.3s ease;
 }
 
-.triangle__up {
+.triangle__down {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid black; /* ←三角形の色 */
+    border-top: 8px solid black; /* ←上にborderをつけて、下向きに見せる */
     margin: auto 0;
     border-radius: 8px;
 }
+
 
 .accordion.open .icon {
     transform: rotate(180deg);
