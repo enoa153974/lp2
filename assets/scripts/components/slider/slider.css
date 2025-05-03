@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     max-width: 1156px;
-    margin: 40px auto 0;
+    margin: 34px auto 0;
 }
 
 .slider__wrapper {
@@ -72,8 +72,13 @@
     font-size: var(--font-size-base);
 }
 
+.card p:last-child{
+    margin-top: var(--spacing-sm);
+    line-height: 1.75;
+}
+
 .prev {
-    margin: auto auto auto 0;
+    margin: 165px auto auto 0;
     color: #fff;
     width: 48px;
     height: 48px;
@@ -83,7 +88,7 @@
 }
 
 .next {
-    margin: auto 0 auto auto;
+    margin: 165px 0 auto auto;
     color: #fff;
     width: 48px;
     height: 48px;

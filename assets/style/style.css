@@ -46,7 +46,8 @@ body {
 .main .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 714px;
+    max-width: 1500px;
     background-image: url('/assets/image/mainVisual.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -71,14 +72,16 @@ body {
     font-size: 50px;
     font-weight: var(--font-weight-normal);
     letter-spacing: 0.3em;
+    line-height: 1.4;
 }
 
 .main .hero .hero__text p {
     font-size: 25px;
+    letter-spacing: 0.3em;
 }
 
 .main .hero .hero__empty {
-    width: 50%;
+    width: 58%;
 }
 
 .pr__inner {
@@ -94,12 +97,16 @@ body {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: #111;
+    letter-spacing: 0.08em;
+    margin-right: 64px;
 }
 
 .pr__inner p {
     font-size: var(--font-size-base);
     color: #111;
+    letter-spacing: 0.08em;
 }
+
 
 .pr__inner .pr__btn {
     min-width: clamp(8rem, 20vw, 300px); /* 128px～300px */
@@ -120,6 +127,7 @@ body {
 
 .pr__inner .pr__btn:last-child {
     background-color: #5dd5ab;
+    margin-left: 32px;
 }
 
 .pr__inner .nav__btn:hover {
@@ -130,6 +138,7 @@ body {
     position: relative;
     width: 100%;
     height: 550px;
+    padding:127px 0;
     background-color: gray;
     background-image: url('/assets/image/about.jpg');
     background-repeat: no-repeat;
@@ -147,11 +156,11 @@ body {
 }
 
 .about__inner .about__empty {
-    width: 50%;
+    width: 49%;
 }
 
 .about__inner .about__text {
-    width: 50%;
+    width: 51%;
     max-width: 429px;
     color: #fff;
 }
@@ -167,8 +176,9 @@ body {
 }
 
 .about__inner .about__text p {
-    margin-top: var(--spacing-base);
+    margin-top: 18px;
     font-size: 14px;
+    line-height: 2.2857;
 }
 
 .voices {
@@ -181,18 +191,22 @@ body {
 .voices h2 {
     font-size: 45px;
     font-weight: var(--font-weight-bold);
+    letter-spacing: 0.05em;
+    padding: 0;
+    line-height: 1.2;
 }
 
 .voices h3 {
     font-size: 20px;
     font-weight: var(--font-weight-semibold);
+    line-height: 2.4;
 }
 
 .voices .voices__slide {
     width: 100%;
     max-width: 1200px;
     height: 500px;
-    margin: 40px auto 0;
+    margin: 38px auto 0;
     background-color: orange;
 }
 

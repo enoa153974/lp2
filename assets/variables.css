@@ -1,26 +1,36 @@
 :root {
-    --main-color: #005bac;
-    --accent-color: #f2a541;
-    --text-color: #000;
-    --bg-color: #fff;
-    --font-jp: 'Noto Serif JP', serif;
-    --font-en: 'EB Garamond', serif;
-    --font-logo: 'Marcellus', serif;
-    --font-size-sm: 15px;
-    --font-size-base: 16px;
-    --font-size-lg: 24px;
-    --font-size-xl: 45px;
-    --font-weight-normal: 400;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-base: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --header-height: 6.3125rem;
-    --sp-hedder-height: 4.375rem;
-    --footer-height: 6.5rem;
-    --sp-footer-height: 10.3125rem;
-    --breakpoint-sp: 47.9375rem;
+    /* === カラー設定 === */
+    --main-color: #005bac;       /* メインカラー（主にリンクやアクセント）*/
+    --accent-color: #f2a541;     /* アクセントカラー（強調やボタン背景）*/
+    --text-color: #000;          /* 標準テキストの色 */
+    --bg-color: #fff;            /* 背景色（ベース）*/
+
+    /* === フォント設定 === */
+    --font-jp: 'Noto Serif JP', serif;         /* 日本語フォント */
+    --font-en: 'EB Garamond', serif;           /* 英語フォント（英字・飾りなど）*/
+    --font-logo: 'Marcellus', serif;           /* ロゴ専用フォント */
+
+    /* === フォントサイズ === */
+    --font-size-sm: 15px;         /* 補足や小さめの文字 */
+    --font-size-base: 16px;       /* 標準の本文サイズ */
+    --font-size-lg: 24px;         /* 中見出しなどに使用 */
+    --font-size-xl: 45px;         /* 大見出しなどに使用 */
+
+    /* === フォントウェイト === */
+    --font-weight-normal: 400;     /* 通常 */
+    --font-weight-semibold: 600;   /* セミボールド（中太字）*/
+    --font-weight-bold: 700;       /* ボールド（太字）*/
+
+    /* === スペーシング（余白） === */
+    --spacing-xs: 0.5rem;         /* 8px：小さい余白 */
+    --spacing-sm: 1rem;           /* 16px：基本の余白 */
+    --spacing-base: 1.5rem;       /* 24px：段落間など */
+    --spacing-lg: 2rem;           /* 32px：セクション内余白 */
+    --spacing-xl: 3rem;           /* 48px：セクション外側や区切り */
+
+    /* === ヘッダー・フッターの高さ === */
+    --header-height: 6.3125rem;       /* PCヘッダーの高さ（約101px）*/
+    --sp-hedder-height: 4.375rem;     /* スマホヘッダーの高さ（約70px） */
+    --footer-height: 6.5rem;          /* PCフッターの高さ（約104px）*/
+    --sp-footer-height: 10.3125rem;   /* スマホフッターの高さ（約165px）*/
 }
