@@ -333,8 +333,8 @@ body {
 /* === heroセクション === */
 .hero{
     background-image: url('/assets/image/mainVisual_sp.jpg');
-    max-width:390px;
-    height: 450px;
+    min-width:390px;
+    height: clamp(450px, 115.38vw, 58.66vw);
     margin-bottom:107px ;
 }
 
@@ -356,8 +356,8 @@ body {
 
 /* === prセクション === */
 .pr__inner{
-    top: 50%;
     padding: 20px 29px 34px;
+    min-width: 350px;
     margin-left: 16px;
     margin-right: 16px;
     transform: translate(0, 0);
@@ -367,30 +367,33 @@ body {
     margin-right: 0;
 }
 
-
-.pr__btn:last-child{
-    margin-left: 0;
-}
-
 .pr__btn {
     padding: clamp(0.625rem, 4.1vw, 1rem) clamp(1.25rem, 15.4vw, 2.5625rem);
-    max-width: 300px;
+    min-width: 300px;
     font-size: 18px;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    max-width: 300px;
 }
+
+.pr__btn:last-child{
+    margin: 20px auto 0;
+}
+
 
 
 /* === aboutセクション === */
 .about{
     background-image: url('/assets/image/about_sp.jpg');
+    min-width: 390px;
     height: 680px;
 }
 
 .about__inner{
-    top: 48px;
-    left:0;
+    top:30%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
     max-width: 390px;
-    transform: translate(0, 0);
 }
 
 .about__text {
@@ -409,6 +412,7 @@ body {
 
 .about__text p {
     margin-top: 14px;
+    font-size: 14px;
 }
 
 /* === voicesセクション === */
@@ -466,7 +470,7 @@ body {
     padding: 24px 16px;
     }
 
-    .logo{
+    .footer a{
         width: 166px;
         margin: 0 auto;
     }
