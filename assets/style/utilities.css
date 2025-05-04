@@ -59,7 +59,7 @@
     .font-semibold  { font-weight: var(--font-weight-semibold); }
     .font-bold      { font-weight: var(--font-weight-bold); }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* === 余白系（margin） === */
     .sm\:mt-4 { margin-top: 1rem; }
     .sm\:mb-4 { margin-bottom: 1rem; }

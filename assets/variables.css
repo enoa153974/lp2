@@ -11,14 +11,15 @@
     --font-logo: 'Marcellus', serif;           /* ロゴ専用フォント */
 
     /* === フォントサイズ === */
-    --font-size-sm: 15px;         /* 補足や小さめの文字 */
-    --font-size-base: 16px;       /* 標準の本文サイズ */
-    --font-size-lg: 24px;         /* 中見出しなどに使用 */
-    --font-size-xl: 45px;         /* 大見出しなどに使用 */
+  /* === フォントサイズ（可変） === */
+  --font-size-sm: clamp(13px, 1vw, 15px);            /* 補足や小さめの文字、15px @1500px */
+  --font-size-base: clamp(14px, 1.066vw, 16px);      /* 標準の本文サイズ、16px @1500px */
+  --font-size-lg: clamp(18px, 1.6vw, 24px);          /* 中見出しなどに使用、24px @1500px */
+  --font-size-xl: clamp(28px, 3vw, 45px);            /* 大見出しなどに使用、45px @1500px */
 
     /* === フォントウェイト === */
     --font-weight-normal: 400;     /* 通常 */
-    --font-weight-semibold: 600;   /* セミボールド（中太字）*/
+    --font-weight-semibold: 500;   /* セミボールド（中太字）*/
     --font-weight-bold: 700;       /* ボールド（太字）*/
 
     /* === スペーシング（余白） === */

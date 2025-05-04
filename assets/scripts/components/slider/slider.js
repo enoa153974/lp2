@@ -17,7 +17,7 @@ export function slider() {
     let cards = [];
 
     function getVisibleCount() {
-        return window.innerWidth <= 768 ? 1 : 3;
+        return window.innerWidth <= 767 ? 1 : 3;
     }
 
     function cloneCards() {

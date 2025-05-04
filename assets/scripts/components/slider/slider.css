@@ -7,29 +7,29 @@
 
 .slider__wrapper {
     width: 980px; /* 320px × 3 */
-    max-width: 100%;
+    max-width: clamp(320px, 77.07vw, 1156px); /* 1500pxで1156pxになる可変幅 */
     overflow: hidden;
 }
 
 .slider__track {
-    width: 980px;
+    width:100%;
     margin: 0 auto;
     transition: transform 0.8s ease;
 }
 
 .card {
-    width: 300px;
+    width: calc((100% - 80px) / 3); /* カード3枚 + margin-right: 40px × 2 */
     height: 388px;
     flex-shrink: 0;
     margin-right: 40px;
-    padding: 40px 16px;
+    padding: clamp(24px, 2.667vw, 40px) clamp(10px, 1.067vw, 16px);
     background: #dbf7f9;
     font-size: 2rem;
 }
 
 .avatar__wrapper {
-    width: 100px;
-    height: 100px;
+    width: clamp(60px, 6.67vw, 100px);
+    height: clamp(60px, 6.67vw, 100px);
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto;
@@ -45,7 +45,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
-    transform: scale(1.3) translateX(-10%) translateY(8%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.4) translateX(-10%) translateY(9%); /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-02 {
@@ -85,6 +85,7 @@
     background-color: #00afbf;
     font-size: 24px;
     border-radius: 50%;
+    transition: opacity 0.3s ease;
 }
 
 .next {
@@ -95,11 +96,15 @@
     background-color: #00afbf;
     font-size: 24px;
     border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.prev:hover,.next:hover{
+    opacity: 60%;
 }
 
 /* == スライド下ドット == */
 .slider__dots {
-    gap: 0.5rem;
     gap: 0.5rem;
     margin-top: 24px;
     width: 100%;
@@ -120,39 +125,59 @@
 }
 
 /* レスポンシブ対応（1枚表示）*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .slider{
-        margin-top: 36px;
+        margin-top: 28px;
     }
-    .slider__wrapper {
-        width: 320px;
+    .slider__wrapper{
+        max-width: 280px;
     }
 
-    .card {
-        width: 320px;
-        margin: 0;
+    .card{
+        width: 280px;
+        height: 344px;
+        margin-right: 0;
+        padding: 28px 15px;
+    }
+
+    .slider__track{
+        width: auto;
+    }
+
+    .card p{
+    margin-top: 5px;
+    }
+    
+    .card p:last-child{
+        line-height: 2;
     }
 
     .prev{
+        font-size: 18px;
         width: 32px;
         height: 32px;
+        margin-top: 155px;
         margin-right: 7px;
+        line-height: 1.9;
+
     } 
 
     .next{
+        font-size: 18px;
         width: 32px;
         height: 32px;
+        margin-top: 155px;
         margin-left: 7px;
+        line-height: 1.9;
     } 
-    
-    .slider__wrapper {
-        max-width: 280px;
+
+    .avatar__wrapper{
+        width: 80px;
+        height: 80px;
     }
-    
-    .slider__track {
-        width: 980px;
-        margin: 0 auto;
-        transition: transform 0.8s ease;
+
+    .slider__dots{
+        margin-top: 16px;
+        gap: 0.4rem;
     }
-    
 }
