@@ -81,12 +81,12 @@ body {
     font-size: 3.125rem;
     font-weight: var(--font-weight-normal);
     line-height: 1.4;
-    letter-spacing: 0.3em;
+    letter-spacing: .3em;
 }
 
 .hero__text p {
     font-size: 1.5625rem;
-    letter-spacing: 0.3em;
+    letter-spacing: .3em;
 }
 
 .hero__empty {
@@ -108,21 +108,21 @@ body {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: #111;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
 }
 
 .pr__inner p {
     font-size: var(--font-size-base);
     color: #111;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
 }
 
 .pr__btn {
     min-width: clamp(8rem, 20vw, 18.75rem); /* 128px～300px */
     max-height: 3.625rem;
-    padding: clamp(0.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
+    padding: clamp(.625rem, 2vw, 1rem) clamp(1.25rem, 5vw, 2.5625rem); /* 上下:10〜16px, 左右:20〜41px */
     margin: 0;
-    font-size: clamp(0.8rem, 1.5vw, 1.125rem); /* 最小16px～最大18px */
+    font-size: clamp(.8rem, 1.5vw, 1.125rem); /* 最小16px～最大18px */
     font-weight: var(--font-weight-semibold);
     color: #fff;
     white-space: nowrap;
@@ -132,8 +132,8 @@ body {
     border: none;
     border-radius: 2em; /* ここは好みに応じて固定でも可 */
     transition:
-        background-color 0.3s ease,
-        border 0.1s ease;
+        background-color .3s ease,
+        border .1s ease;
 }
 
 .pr__btn:last-child {
@@ -144,13 +144,13 @@ body {
 .pr__btn:hover {
     color: #46c4db;
     background-color: #fff;
-    border: 0.1875rem solid #46c4db;
+    border: .1875rem solid #46c4db;
 }
 
 .pr__btn:last-child:hover {
     color: #5dd5ab;
     background-color: #fff;
-    border: 0.1875rem solid #5dd5ab;
+    border: .1875rem solid #5dd5ab;
 }
 
 /* === aboutセクション === */
@@ -197,7 +197,7 @@ body {
 
 .about__text p {
     margin-top: 1.125rem;
-    font-size: clamp(0.75rem, 0.933vw, 0.875rem); /* 1500px幅で14px */
+    font-size: clamp(.75rem, .933vw, .875rem); /* 1500px幅で14px */
     line-height: 2.2857;
 }
 
@@ -216,14 +216,14 @@ body {
     font-size: 2.8125rem;
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
 }
 
 .voices h3 {
     font-size: 1.25rem;
     font-weight: var(--font-weight-semibold);
     line-height: 2.4;
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
 }
 
 .voices__slide {
@@ -271,16 +271,16 @@ body {
 .scroolbutton {
     width: 2.5rem;
     height: 2.5rem;
-    padding: 0.75rem 0.8125rem;
+    padding: .75rem .8125rem;
     margin-left: 87.3%;
     font-size: 1.125rem;
     color: #fff;
     background-color: #0071ce;
-    transition: opacity 0.3s ease;
+    transition: opacity .3s ease;
 }
 
 .scroolbutton:hover {
-    opacity: 0.6;
+    opacity: .6;
 }
 
 /* === footer === */
@@ -313,14 +313,14 @@ body {
 
 .footer__info {
     gap: var(--spacing-lg);
-    padding: 0.5rem;
+    padding: .5rem;
     margin-left: clamp(2rem, 5vw, 4.6875rem);
-    font-size: clamp(0.75rem, 0.933vw, 0.875rem); /* 可変で14pxまで */
+    font-size: clamp(.75rem, .933vw, .875rem); /* 可変で14pxまで */
 }
 
 .footer__text {
-    padding: 0.5rem;
-    font-size: clamp(0.625rem, 0.8vw, 0.75rem); /* 可変で12pxまで */
+    padding: .5rem;
+    font-size: clamp(.625rem, .8vw, .75rem); /* 可変で12pxまで */
     line-height: 2.5;
 }
 
@@ -337,7 +337,7 @@ body {
     /* ブレイクポイント767px */
     :root {
         /* === フォントサイズ === */
-        --font-size-base: 0.875rem; /* 標準の本文サイズ 14px */
+        --font-size-base: .875rem; /* 標準の本文サイズ 14px */
         --font-size-lg: 1.125rem; /* 中見出しなどに使用 18px */
 
         /* === スペーシング（余白） === */
@@ -371,7 +371,7 @@ body {
     }
 
     .hero__text p {
-        margin-top: 0.625rem;
+        margin-top: .625rem;
         font-size: 1.25rem;
         white-space: nowrap;
     }
@@ -392,7 +392,7 @@ body {
     .pr__btn {
         min-width: 18.75rem;
         max-width: 18.75rem;
-        padding: clamp(0.625rem, 4.1vw, 1rem) clamp(1.25rem, 15.4vw, 2.5625rem);
+        padding: clamp(.625rem, 4.1vw, 1rem) clamp(1.25rem, 15.4vw, 2.5625rem);
         margin: 1.25rem auto 0;
         font-size: 1.125rem;
     }
@@ -431,8 +431,8 @@ body {
     }
 
     .about__text p {
-        margin-top: 0.875rem;
-        font-size: 0.875rem;
+        margin-top: .875rem;
+        font-size: .875rem;
     }
 
     /* === voicesセクション === */
@@ -465,7 +465,7 @@ body {
     }
 
     .faq h3 {
-        margin-top: 0.625rem;
+        margin-top: .625rem;
         font-size: 1rem;
         line-height: 1.3;
     }
@@ -474,8 +474,8 @@ body {
     .scroolbutton {
         width: 2.5rem;
         height: 2.5rem;
-        padding: 0.75rem 0.8125rem;
-        margin-top: 0.625rem;
+        padding: .75rem .8125rem;
+        margin-top: .625rem;
         margin-left: 87.3%;
         color: #fff;
         background-color: #0071ce;
@@ -494,7 +494,6 @@ body {
     }
 
     .logo img {
-        display: block;
         width: 10.375rem;
         margin: 0 auto;
     }
@@ -504,11 +503,11 @@ body {
         width: 18.75rem;
         padding: 0;
         margin: 1.125rem auto 0;
-        font-size: 0.75rem;
+        font-size: .75rem;
     }
 
     .footer__inner .footer__text {
-        margin: 0.625rem auto 0;
-        font-size: 0.6875rem;
+        margin: .625rem auto 0;
+        font-size: .6875rem;
     }
 }

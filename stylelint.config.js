@@ -8,6 +8,8 @@ module.exports = {
     // Prettier連携（整形ルールをLint対象に）
     'prettier/prettier': true,
 
+    'number-leading-zero': 'never',
+
     // 推奨Stylelintルール
     'block-no-empty': true,
     'color-no-invalid-hex': true,

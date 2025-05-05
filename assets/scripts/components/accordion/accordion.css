@@ -4,7 +4,7 @@
     padding: 1.5rem 1.5625rem;
     margin-bottom: 1.5rem;
     background: #fff;
-    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 10%);
+    box-shadow: 0 .25rem .5rem rgb(0 0 0 / 10%);
 }
 
 .accordion:last-child {
@@ -24,11 +24,11 @@
 .accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height .3s ease;
 }
 
 .accordion.open .accordion__content {
-    max-height: 400px; 
+    max-height: 400px;
 }
 
 .question span {
@@ -52,17 +52,17 @@
 }
 
 .icon {
-    transition: transform 0.3s ease;
+    transition: transform .3s ease;
 }
 
 .triangle__down {
     width: 0;
     height: 0;
     margin: auto 0;
-    border-top: 0.5rem solid black; /* ←上にborderをつけて、下向きに見せる */
-    border-right: 0.5rem solid transparent;
-    border-left: 0.5rem solid transparent;
-    border-radius: 0.5rem;
+    border-top: .5rem solid black; /* ←上にborderをつけて、下向きに見せる */
+    border-right: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-radius: .5rem;
 }
 
 .accordion.open .icon {
@@ -70,41 +70,42 @@
 }
 
 @media screen and (width <= 47.9375rem) {
-/* ブレイクポイント767px */
-.accordion {
-    padding: 20px 1rem;
-    margin-bottom: 1.25rem;
-}
-.question span {
-    margin-right: 0.75rem;
-    font-size: 1rem;
-    color: #000;
-}
+    /* ブレイクポイント767px */
+    .accordion {
+        padding: 20px 1rem;
+        margin-bottom: 1.25rem;
+    }
 
-.question span:last-child {
-    font-size: 0.9375rem;
-    line-height: 1.8;
-}
+    .question span {
+        margin-right: .75rem;
+        font-size: 1rem;
+        color: #000;
+    }
 
-.accordion.open .accordion__content span {
-    margin-top: 0.8125rem;
-    margin-right: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.7;
-}
+    .question span:last-child {
+        font-size: .9375rem;
+        line-height: 1.8;
+    }
 
-.accordion.open .accordion__content p {
-    margin-top: 0.8125rem;
-    font-size: 0.9375rem;
-    line-height: 1.8;
-    margin-bottom: 32px;
-}
+    .accordion.open .accordion__content span {
+        margin-top: .8125rem;
+        margin-right: .75rem;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
 
-.triangle__down {
-    margin: 0.625rem 0 auto auto;
-    border-top: 0.4375rem solid black; /* ←上にborderをつけて、下向きに見せる */
-    border-right: 0.4375rem solid transparent;
-    border-left: 0.4375rem solid transparent;
-    border-radius: 0.5rem;
-}
+    .accordion.open .accordion__content p {
+        margin-top: .8125rem;
+        margin-bottom: 32px;
+        font-size: .9375rem;
+        line-height: 1.8;
+    }
+
+    .triangle__down {
+        margin: .625rem 0 auto auto;
+        border-top: .4375rem solid black; /* ←上にborderをつけて、下向きに見せる */
+        border-right: .4375rem solid transparent;
+        border-left: .4375rem solid transparent;
+        border-radius: .5rem;
+    }
 }
