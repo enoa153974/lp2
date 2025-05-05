@@ -28,14 +28,15 @@
 }
 
 .accordion.open .accordion__content {
-    max-height: 12.5rem; /* 十分に大きめにしておくと中身に応じて見える */
+    max-height: 400px; 
 }
 
 .question span {
     font-size: 1.125rem;
+    user-select: none;
 }
 
-.question p {
+.question span:last-child {
     font-size: var(--font-size-sm);
 }
 
@@ -69,40 +70,41 @@
 }
 
 @media screen and (width <= 47.9375rem) {
-    /* ブレイクポイント767px */
-    .accordion {
-        padding: 1.25rem 1rem;
-        margin-bottom: 1.25rem;
-    }
+/* ブレイクポイント767px */
+.accordion {
+    padding: 20px 1rem;
+    margin-bottom: 1.25rem;
+}
+.question span {
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    color: #000;
+}
 
-    .question span {
-        margin-right: 0.75rem;
-        font-size: 1rem;
-    }
+.question span:last-child {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+}
 
-    .question p {
-        font-size: 0.9375rem;
-        line-height: 1.8;
-    }
+.accordion.open .accordion__content span {
+    margin-top: 0.8125rem;
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
 
-    .accordion.open .accordion__content span {
-        margin-top: 0.8125rem;
-        margin-right: 0.75rem;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
+.accordion.open .accordion__content p {
+    margin-top: 0.8125rem;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
 
-    .accordion.open .accordion__content p {
-        margin-top: 0.8125rem;
-        font-size: 0.9375rem;
-        line-height: 1.8;
-    }
-
-    .triangle__down {
-        margin: 0.625rem 0 auto auto;
-        border-top: 0.4375rem solid black; /* ←上にborderをつけて、下向きに見せる */
-        border-right: 0.4375rem solid transparent;
-        border-left: 0.4375rem solid transparent;
-        border-radius: 0.5rem;
-    }
+.triangle__down {
+    margin: 0.625rem 0 auto auto;
+    border-top: 0.4375rem solid black; /* ←上にborderをつけて、下向きに見せる */
+    border-right: 0.4375rem solid transparent;
+    border-left: 0.4375rem solid transparent;
+    border-radius: 0.5rem;
+}
 }

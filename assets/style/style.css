@@ -1,7 +1,7 @@
 /* === 外部cssの読み込み === */
 @import url('/assets/style/reset.css'); /* === リセットcss === */
 @import url('/assets/variables.css'); /* === カスタム変数 === */
-@import url('./utilities.css'); /* === ユーティリティクラス === */
+@import url('/assets/style/utilities.css'); /* === ユーティリティクラス === */
 
 /* === component === */
 @import url('/assets/scripts/components/slider/slider.css'); /* voicesセクションのカルーセル */
