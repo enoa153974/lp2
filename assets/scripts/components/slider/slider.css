@@ -1,38 +1,38 @@
 .slider {
     width: 100%;
+    max-width: 72.25rem;
     height: auto;
-    max-width: 1156px;
-    margin: 34px auto 0;
+    margin: 2.125rem auto 0;
 }
 
 .slider__wrapper {
-    width: 980px; /* 320px × 3 */
-    max-width: clamp(320px, 77.07vw, 1156px); /* 1500pxで1156pxになる可変幅 */
+    width: 61.25rem; /* 320px × 3 */
+    max-width: clamp(20rem, 77.07vw, 72.25rem); /* 1500pxで1156pxになる可変幅 */
     overflow: hidden;
 }
 
 .slider__track {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     transition: transform 0.8s ease;
 }
 
 .card {
-    width: calc((100% - 80px) / 3); /* カード3枚 + margin-right: 40px × 2 */
-    height: 388px;
     flex-shrink: 0;
-    margin-right: 40px;
-    padding: clamp(24px, 2.667vw, 40px) clamp(10px, 1.067vw, 16px);
-    background: #dbf7f9;
+    width: calc((100% - 5rem) / 3); /* カード3枚 + margin-right: 40px × 2 */
+    height: 24.25rem;
+    padding: clamp(1.5rem, 2.667vw, 2.5rem) clamp(0.625rem, 1.067vw, 1rem);
+    margin-right: 2.5rem;
     font-size: 2rem;
+    background: #dbf7f9;
 }
 
 .avatar__wrapper {
-    width: clamp(60px, 6.67vw, 100px);
-    height: clamp(60px, 6.67vw, 100px);
+    width: clamp(3.75rem, 6.67vw, 6.25rem);
+    height: clamp(3.75rem, 6.67vw, 6.25rem);
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
-    margin: 0 auto;
 }
 
 .avatar-01,
@@ -72,112 +72,114 @@
     font-size: var(--font-size-base);
 }
 
-.card p:last-child{
+.card p:last-child {
     margin-top: var(--spacing-sm);
     line-height: 1.75;
 }
 
 .prev {
-    margin: 165px auto auto 0;
+    width: 3rem;
+    height: 3rem;
+    margin: 10.3125rem auto auto 0;
+    font-size: 1.5rem;
     color: #fff;
-    width: 48px;
-    height: 48px;
     background-color: #00afbf;
-    font-size: 24px;
     border-radius: 50%;
     transition: opacity 0.3s ease;
 }
 
 .next {
-    margin: 165px 0 auto auto;
+    width: 3rem;
+    height: 3rem;
+    margin: 10.3125rem 0 auto auto;
+    font-size: 1.5rem;
     color: #fff;
-    width: 48px;
-    height: 48px;
     background-color: #00afbf;
-    font-size: 24px;
     border-radius: 50%;
     transition: opacity 0.3s ease;
 }
 
-.prev:hover,.next:hover{
-    opacity: 60%;
+.prev:hover,
+.next:hover {
+    opacity: 0.6;
 }
 
 /* == スライド下ドット == */
 .slider__dots {
     gap: 0.5rem;
-    margin-top: 24px;
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .slider__dot {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
+    appearance: none; /* Safari対策 */
+    cursor: pointer;
     background-color: #eee;
     border-radius: 50%;
-    cursor: pointer;
     transition: background-color 0.3s ease;
-    appearance: none; /* Safari対策 */
 }
 
 .slider__dot.active {
     background-color: #00afbf;
 }
 
-/* レスポンシブ対応（1枚表示）*/
-@media (max-width: 767px) {
-    .slider{
-        margin-top: 28px;
-    }
-    .slider__wrapper{
-        max-width: 280px;
+/* レスポンシブ対応（1枚表示） */
+@media (width <= 47.9375rem) {
+    /* ブレイクポイント767px */
+    .slider {
+        margin-top: 1.75rem;
     }
 
-    .card{
-        width: 280px;
-        height: 344px;
+    .slider__wrapper {
+        max-width: 17.5rem;
+    }
+
+    .card {
+        width: 17.5rem;
+        height: 21.5rem;
+        padding: 1.75rem 0.9375rem;
         margin-right: 0;
-        padding: 28px 15px;
     }
 
-    .slider__track{
+    .slider__track {
         width: auto;
     }
 
-    .card p{
-    margin-top: 5px;
+    .card p {
+        margin-top: 0.3125rem;
     }
-    
-    .card p:last-child{
+
+    .card p:last-child {
         line-height: 2;
     }
 
-    .prev{
-        font-size: 18px;
-        width: 32px;
-        height: 32px;
-        margin-top: 155px;
-        margin-right: 7px;
+    .prev {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 9.6875rem;
+        margin-right: 0.4375rem;
+        font-size: 1.125rem;
         line-height: 1.9;
-
-    } 
-
-    .next{
-        font-size: 18px;
-        width: 32px;
-        height: 32px;
-        margin-top: 155px;
-        margin-left: 7px;
-        line-height: 1.9;
-    } 
-
-    .avatar__wrapper{
-        width: 80px;
-        height: 80px;
     }
 
-    .slider__dots{
-        margin-top: 16px;
+    .next {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 9.6875rem;
+        margin-left: 0.4375rem;
+        font-size: 1.125rem;
+        line-height: 1.9;
+    }
+
+    .avatar__wrapper {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .slider__dots {
         gap: 0.4rem;
+        margin-top: 1rem;
     }
 }

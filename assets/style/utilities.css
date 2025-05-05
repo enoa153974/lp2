@@ -1,25 +1,49 @@
 /* === ユーティリティクラス === */
 
 /* === 余白系（margin） === */
-.mt-4 { margin-top: 1rem; }
-.mb-4 { margin-bottom: 1rem; }
-.ml-4 { margin-left: 1rem; }
-.mr-4 { margin-right: 1rem; }
+.mt-4 {
+    margin-top: 1rem;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.ml-4 {
+    margin-left: 1rem;
+}
+.mr-4 {
+    margin-right: 1rem;
+}
 
-.mt-6 { margin-top: 1.5rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.ml-6 { margin-left: 1.5rem; }
-.mr-6 { margin-right: 1.5rem; }
+.mt-6 {
+    margin-top: 1.5rem;
+}
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+.ml-6 {
+    margin-left: 1.5rem;
+}
+.mr-6 {
+    margin-right: 1.5rem;
+}
 
 /* === 余白系（padding） === */
-.pt-4 { padding-top: 1rem; }
-.pb-4 { padding-bottom: 1rem; }
-.pl-4 { padding-left: 1rem; }
-.pr-4 { padding-right: 1rem; }
+.pt-4 {
+    padding-top: 1rem;
+}
+.pb-4 {
+    padding-bottom: 1rem;
+}
+.pl-4 {
+    padding-left: 1rem;
+}
+.pr-4 {
+    padding-right: 1rem;
+}
 
 .px-4 {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .py-4 {
@@ -28,81 +52,196 @@
 }
 
 /* === 幅系 === */
-    .w-full     { width: 100%; }
-    .max-w-4xl  { max-width: 64rem; }
+.w-full {
+    width: 100%;
+}
+.max-w-4xl {
+    max-width: 64rem;
+}
 
 /* === display系 === */
-    .hidden        { display: none; }
-    .block         { display: block; }
-    .inline-block  { display: inline-block; }
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
 
 /* === 配置系 === */
-    .flex           { display: flex; }
-    .flex-col       { flex-direction: column; }
-    .flex-reverse   { flex-direction: row-reverse; }
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-reverse {
+    flex-direction: row-reverse;
+}
 
-    .items-center    { align-items: center; }
-    .justify-center  { justify-content: center; }
-    .justify-between { justify-content: space-between; }
-    .justify-end     { justify-content: flex-end; }
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: flex-end;
+}
 
 /* === フォント系 === */
-    .jp         { font-family: var(--font-jp); }
-    .en         { font-family: var(--font-en); }
-    .font-logo  { font-family: var(--font-logo); }
+.jp {
+    font-family: var(--font-jp);
+}
+.en {
+    font-family: var(--font-en);
+}
+.font-logo {
+    font-family: var(--font-logo);
+}
 
-    .text-center { text-align: center; }
-    .text-left   { text-align: left; }
-    .text-right  { text-align: right; }
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
 
-    .font-normal    { font-weight: var(--font-weight-normal); }
-    .font-semibold  { font-weight: var(--font-weight-semibold); }
-    .font-bold      { font-weight: var(--font-weight-bold); }
+.font-normal {
+    font-weight: var(--font-weight-normal);
+}
+.font-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+.font-bold {
+    font-weight: var(--font-weight-bold);
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 47.9375rem) {
+    /* ブレイクポイント767px */
     /* === 余白系（margin） === */
-    .sm\:mt-4 { margin-top: 1rem; }
-    .sm\:mb-4 { margin-bottom: 1rem; }
-    .sm\:ml-4 { margin-left: 1rem; }
-    .sm\:mr-4 { margin-right: 1rem; }
-    .sm\:mt-6 { margin-top: 1.5rem; }
-    .sm\:mb-6 { margin-bottom: 1.5rem; }
-    .sm\:ml-6 { margin-left: 1.5rem; }
-    .sm\:mr-6 { margin-right: 1.5rem; }
+    .sm\:mt-4 {
+        margin-top: 1rem;
+    }
+    .sm\:mb-4 {
+        margin-bottom: 1rem;
+    }
+    .sm\:ml-4 {
+        margin-left: 1rem;
+    }
+    .sm\:mr-4 {
+        margin-right: 1rem;
+    }
+    .sm\:mt-6 {
+        margin-top: 1.5rem;
+    }
+    .sm\:mb-6 {
+        margin-bottom: 1.5rem;
+    }
+    .sm\:ml-6 {
+        margin-left: 1.5rem;
+    }
+    .sm\:mr-6 {
+        margin-right: 1.5rem;
+    }
 
     /* === 余白系（padding） === */
-    .sm\:pt-4 { padding-top: 1rem; }
-    .sm\:pb-4 { padding-bottom: 1rem; }
-    .sm\:pl-4 { padding-left: 1rem; }
-    .sm\:pr-4 { padding-right: 1rem; }
-    .sm\:px-4 { padding-left: 1rem; padding-right: 1rem; }
-    .sm\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+    .sm\:pt-4 {
+        padding-top: 1rem;
+    }
+    .sm\:pb-4 {
+        padding-bottom: 1rem;
+    }
+    .sm\:pl-4 {
+        padding-left: 1rem;
+    }
+    .sm\:pr-4 {
+        padding-right: 1rem;
+    }
+    .sm\:px-4 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .sm\:py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 
     /* === 幅・表示 === */
-    .sm\:w-full { width: 100%; }
-    .sm\:max-w-4xl { max-width: 64rem; }
+    .sm\:w-full {
+        width: 100%;
+    }
+    .sm\:max-w-4xl {
+        max-width: 64rem;
+    }
 
-    .sm\:hidden { display: none; }
-    .sm\:block { display: block; }
-    .sm\:inline-block { display: inline-block; }
+    .sm\:hidden {
+        display: none;
+    }
+    .sm\:block {
+        display: block;
+    }
+    .sm\:inline-block {
+        display: inline-block;
+    }
 
     /* === Flexbox・配置系 === */
-    .sm\:flex { display: flex; }
-    .sm\:flex-col { flex-direction: column; }
-    .sm\:flex-reverse { flex-direction: row-reverse; }
-    .sm\:items-center { align-items: center; }
-    .sm\:justify-center { justify-content: center; }
-    .sm\:justify-between { justify-content: space-between; }
-    .sm\:justify-end { justify-content: flex-end; }
+    .sm\:flex {
+        display: flex;
+    }
+    .sm\:flex-col {
+        flex-direction: column;
+    }
+    .sm\:flex-reverse {
+        flex-direction: row-reverse;
+    }
+    .sm\:items-center {
+        align-items: center;
+    }
+    .sm\:justify-center {
+        justify-content: center;
+    }
+    .sm\:justify-between {
+        justify-content: space-between;
+    }
+    .sm\:justify-end {
+        justify-content: flex-end;
+    }
 
     /* === フォント・テキスト === */
-    .sm\:jp { font-family: var(--font-jp); }
-    .sm\:en { font-family: var(--font-en); }
-    .sm\:font-logo { font-family: var(--font-logo); }
-    .sm\:text-center { text-align: center; }
-    .sm\:text-left { text-align: left; }
-    .sm\:text-right { text-align: right; }
-    .sm\:font-normal { font-weight: var(--font-weight-normal); }
-    .sm\:font-semibold { font-weight: var(--font-weight-semibold); }
-    .sm\:font-bold { font-weight: var(--font-weight-bold); }
+    .sm\:jp {
+        font-family: var(--font-jp);
+    }
+    .sm\:en {
+        font-family: var(--font-en);
+    }
+    .sm\:font-logo {
+        font-family: var(--font-logo);
+    }
+    .sm\:text-center {
+        text-align: center;
+    }
+    .sm\:text-left {
+        text-align: left;
+    }
+    .sm\:text-right {
+        text-align: right;
+    }
+    .sm\:font-normal {
+        font-weight: var(--font-weight-normal);
+    }
+    .sm\:font-semibold {
+        font-weight: var(--font-weight-semibold);
+    }
+    .sm\:font-bold {
+        font-weight: var(--font-weight-bold);
+    }
 }

@@ -1,24 +1,24 @@
 .accordion {
-    background:#fff;
-    padding: 24px 25px; 
-    margin-bottom: 24px;
     width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 37.5rem;
+    padding: 1.5rem 1.5625rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 10%);
 }
 
-.accordion:last-child{
+.accordion:last-child {
     margin-bottom: 0;
 }
 
 .accordion__btn {
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
     background: none;
     border: none;
-    width: 100%;
-    text-align: left;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0;
 }
 
 .accordion__content {
@@ -28,83 +28,81 @@
 }
 
 .accordion.open .accordion__content {
-    max-height: 200px; /* 十分に大きめにしておくと中身に応じて見える */
+    max-height: 12.5rem; /* 十分に大きめにしておくと中身に応じて見える */
 }
 
-.question span{
-    font-size:18px;
+.question span {
+    font-size: 1.125rem;
 }
 
-.question p{
-    font-size:var(--font-size-sm);
+.question p {
+    font-size: var(--font-size-sm);
 }
 
-.accordion.open .accordion__content span{
-    margin-top: 22px;
-    font-size: 18px;
+.accordion.open .accordion__content span {
+    margin-top: 1.375rem;
+    font-size: 1.125rem;
 }
-.accordion.open .accordion__content p{
-    margin-top: 22px;
+
+.accordion.open .accordion__content p {
+    margin-top: 1.375rem;
+    font-size: var(--font-size-sm);
     line-height: 1.7;
-    font-size:var(--font-size-sm);
 }
 
-.icon{
+.icon {
     transition: transform 0.3s ease;
 }
 
 .triangle__down {
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid black; /* ←上にborderをつけて、下向きに見せる */
     margin: auto 0;
-    border-radius: 8px;
+    border-top: 0.5rem solid black; /* ←上にborderをつけて、下向きに見せる */
+    border-right: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    border-radius: 0.5rem;
 }
-
 
 .accordion.open .icon {
     transform: rotate(180deg);
 }
 
+@media screen and (width <= 47.9375rem) {
+    /* ブレイクポイント767px */
+    .accordion {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.25rem;
+    }
 
-@media screen and (max-width: 767px) {
-.accordion{
-    padding: 20px 16px;
-    margin-bottom: 20px;
-}
+    .question span {
+        margin-right: 0.75rem;
+        font-size: 1rem;
+    }
 
-    
-.question span{
-    font-size:16px;
-    margin-right: 12px;
-}
+    .question p {
+        font-size: 0.9375rem;
+        line-height: 1.8;
+    }
 
-.question p{
-    font-size:15px;
-    line-height: 1.8;
-}
+    .accordion.open .accordion__content span {
+        margin-top: 0.8125rem;
+        margin-right: 0.75rem;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
 
-.accordion.open .accordion__content span{
-    margin-top: 13px;
-    margin-right: 12px;
-    font-size: 16px;
-    line-height: 1.7;
-}
-.accordion.open .accordion__content p{
-    margin-top: 13px;
-    line-height: 1.8;
-    font-size:15px;
-}
+    .accordion.open .accordion__content p {
+        margin-top: 0.8125rem;
+        font-size: 0.9375rem;
+        line-height: 1.8;
+    }
 
-
-.triangle__down {
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid black; /* ←上にborderをつけて、下向きに見せる */
-    margin:10px 0 auto auto;
-    border-radius: 8px;
-}
-
+    .triangle__down {
+        margin: 0.625rem 0 auto auto;
+        border-top: 0.4375rem solid black; /* ←上にborderをつけて、下向きに見せる */
+        border-right: 0.4375rem solid transparent;
+        border-left: 0.4375rem solid transparent;
+        border-radius: 0.5rem;
+    }
 }
