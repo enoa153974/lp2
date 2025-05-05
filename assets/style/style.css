@@ -39,6 +39,11 @@ body {
 .header__inner .logo {
     min-width: 8.75rem;
     text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.header__inner .logo:hover{
+    opacity:60%;
 }
 
 /* === メインコンテンツ === */
@@ -290,10 +295,20 @@ body {
 .footer .logo {
     width: clamp(7.5rem, 12.733vw, 11.9375rem);
     vertical-align: middle;
+    transition: opacity .3s ease;
+}
+
+.footer .logo:hover {
+    opacity:60%;
 }
 
 .footer__info a {
     width: fit-content;
+    transition: color .3s ease;
+}
+
+.footer__info a:hover{
+    color: #5dd5ab;
 }
 
 .footer__info {
