@@ -1,14 +1,27 @@
 {
+  "name": "lp2",
+  "version": "1.0.0",
+  "description": "- 模擬案件lp2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.css\"",
+    "lint:check": "stylelint \"**/*.css\" --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enoa153974/lp2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enoa153974/lp2/issues"
+  },
+  "homepage": "https://github.com/enoa153974/lp2#readme",
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "sass": "^1.87.0",
     "stylelint": "^16.19.1",
     "stylelint-config-recess-order": "^6.0.0",
-    "stylelint-config-standard": "^38.0.0",
-    "stylelint-prettier": "^5.0.3",
-    "stylelint-scss": "^6.11.1"
-  },
-  "scripts": {
-    "lint:style": "stylelint \"**/*.scss\" --fix"
+    "stylelint-config-standard": "^38.0.0"
   }
 }

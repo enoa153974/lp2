@@ -6,6 +6,25 @@ node_modules/
 
 # OSごとの不要ファイル
 .DS_Store
+Thumbs.db
 
 # 環境変数や秘密鍵など
 .env
+
+# VSCode設定（プロジェクトごとのエディタ設定）
+.vscode/
+
+# ビルド出力先（dist/ や build/ など生成物）
+dist/
+build/
+
+# ログやキャッシュ
+*.log
+.cache/
+
+# Prettierの一時フォルダ（使ってる場合）
+.prettiercache
+
+# サムネイルやバックアップ
+*.tmp
+*.bak

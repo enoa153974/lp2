@@ -1,333 +1,325 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- meta情報 -->
-        <!--文字エンコード指定-->
-        <meta charset="UTF-8">
-        <!--ページタイトル-->
-        <title>肌のうるおい、煌めく Kirameki Cream | Kira-meki</title>
-        <!--ページ説明文-->
-        <meta name="description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
-        <!--SNSシェア時のタイトル-->
-        <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
-        <!--SNSシェア時の説明文-->
-        <meta
-            property="og:description"
-            content="Kirameki Creamはお肌のうるおいを美しく保ちます。"
-        >
-        <!--ページの種類指定-->
-        <meta property="og:type" content="article">
-        <!--ページ正規URL-->
-        <meta property="og:url" content="https://example.com">
-        <!--SNSシェア時のアイキャッチ画像
+
+<head>
+    <!-- meta情報 -->
+    <!--文字エンコード指定-->
+    <meta charset="UTF-8">
+    <!--ページタイトル-->
+    <title>肌のうるおい、煌めく Kirameki Cream | Kira-meki</title>
+    <!--ページ説明文-->
+    <meta name="description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
+    <!--SNSシェア時のタイトル-->
+    <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
+    <!--SNSシェア時の説明文-->
+    <meta property="og:description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
+    <!--ページの種類指定-->
+    <meta property="og:type" content="article">
+    <!--ページ正規URL-->
+    <meta property="og:url" content="https://example.com">
+    <!--SNSシェア時のアイキャッチ画像
         <meta property="og:image" content="https://" />-->
-        <!--SNSに表示されるサイト名 -->
-        <meta property="og:site_name" content="Kira-meki">
-        <!--Safariの自動リンク検出を無効化する-->
-        <meta name="format-detection" content="telephone=no">
+    <!--SNSに表示されるサイト名 -->
+    <meta property="og:site_name" content="Kira-meki">
+    <!--Safariの自動リンク検出を無効化する-->
+    <meta name="format-detection" content="telephone=no">
 
-        <!--レスポンシブ対応の為の読み込み-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--レスポンシブ対応の為の読み込み-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--cssの読み込み-->
-        <link rel="stylesheet" href="/assets/style/style.css">
+    <!--cssの読み込み-->
+    <link rel="stylesheet" href="/assets/style/style.css">
 
-        <!--ロゴ使用フォントの読み込み(Marcellus) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        >
+    <!--ロゴ使用フォントの読み込み(Marcellus) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        <!--日本語フォントの読み込み(Noto Serif JP) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        >
+    <!--日本語フォントの読み込み(Noto Serif JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        <!--英語フォントの読み込み(EB Garamond) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        >
-        <!--アイコンフォント（fontFontAwesome）の読み込み -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        >
-    </head>
+    <!--英語フォントの読み込み(EB Garamond) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--アイコンフォント（fontFontAwesome）の読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-    <body>
-        <!-- ヘッダー -->
-        <header class="header flex">
-            <!-- ロゴ -->
-            <div class="header__inner flex items-center justify-center">
-                <a href="/" class="logo">
-                    <img src="/assets/image/logo.png" alt="Kira-meki">
-                </a>
-            </div>
-        </header>
+<body>
+    <!-- ヘッダー -->
+    <header class="header flex">
+        <!-- ロゴ -->
+        <div class="header__inner flex items-center justify-center">
+            <a href="/" class="logo">
+                <img src="/assets/image/logo.png" alt="Kira-meki">
+            </a>
+        </div>
+    </header>
 
-        <!-- メインコンテンツ -->
-        <main class="main flex flex-col">
-            <!-- heroセクション -->
-            <section class="hero flex">
-                <div class="hero__inner flex justify-center sm:flex-col">
-                    <div class="hero__text flex flex-col">
-                        <h2 class="font-logo"><span class="break block"> Kirameki</span>Cream</h2>
-                        <p>肌のうるおい、煌めく。</p>
-                    </div>
-                    <div class="hero__empty"></div>
+    <!-- メインコンテンツ -->
+    <main class="main flex flex-col">
+        <!-- heroセクション -->
+        <section class="hero flex">
+            <div class="hero__inner flex justify-center sm:flex-col">
+                <div class="hero__text flex flex-col">
+                    <h1 class="font-logo"><span class="break block"> Kirameki</span>Cream</h1>
+                    <p>肌のうるおい、煌めく。</p>
                 </div>
-            </section>
-
-            <!-- prセクション -->
-            <div class="pr flex items-center justify-center">
-                <div class="pr__inner flex justify-between sm:flex-col">
-                    <div class="flex flex-col">
-                        <h3 class="sm:text-center">キラメキクリーム</h3>
-                        <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
-                    </div>
-                    <a href="/" class="pr__btn inline-block text-center">オンラインショップへ</a>
-                    <a href="/cart/" class="pr__btn inline-block text-center">購入する</a>
-                </div>
+                <div class="hero__empty"></div>
             </div>
+        </section>
 
-            <!-- aboutセクション -->
-            <section class="about flex">
-                <div class="about__inner flex flex-reverse justify-center">
-                    <div class="about__text flex flex-col">
-                        <h2 class="en sm:text-center">Keep Your Skin Beautiful.</h2>
-                        <h3 class="sm:text-center">お肌を美しく保つ</h3>
-                        <p>
-                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+        <!-- prセクション -->
+        <div class="pr flex items-center justify-center">
+            <div class="pr__inner flex justify-between sm:flex-col">
+                <div class="flex flex-col">
+                    <h3 class="sm:text-center">キラメキクリーム</h3>
+                    <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
+                </div>
+                <a href="/" class="pr__btn inline-block text-center">オンラインショップへ</a>
+                <a href="/cart/" class="pr__btn inline-block text-center">購入する</a>
+            </div>
+        </div>
+
+        <!-- aboutセクション -->
+        <section class="about flex">
+            <div class="about__inner flex flex-reverse justify-center">
+                <div class="about__text flex flex-col">
+                    <h2 class="about__heading">
+                        <span class="en block sm:text-center">Keep Your Skin Beautiful.</span>
+                        <span class="block sm:text-center">お肌を美しく保つ</span>
+                    </h2>
+                    <!--<h2 class="en sm:text-center">Keep Your Skin Beautiful.</h2>
+                    <h3 class="sm:text-center">お肌を美しく保つ</h3>-->
+                    <p>
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                </div>
+                <div class="about__empty sm:hidden"></div>
+            </div>
+        </section>
+
+        <!-- voicesセクション -->
+        <section class="voices flex flex-col">
+            <h2 class="voices__heading text-center">
+                <span class="en block">Voices</span>
+                <span class="block">お客様の声</span>
+            </h2>
+
+            <!-- カルーセル：カード×6 -->
+            <div class="slider flex items-center justify-center">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="slider__wrapper flex flex-col">
+                    <div class="slider__track flex sm:justify-center">
+                        <!-- カード1:Aさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-01 block" src="/assets/image/voices_01.jpg" alt="お客様Aさんの声">
+                            </div>
+                            <p class="text-center">Aさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+
+                        <!-- カード2:Bさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-02 block" src="/assets/image/voices_02.jpg" alt="お客様Bさんの声">
+                            </div>
+                            <p class="text-center">Bさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+
+                        <!-- カード3:Cさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-03 block" src="/assets/image/voices_03.jpg" alt="お客様Cさんの声">
+                            </div>
+                            <p class="text-center">Cさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+
+                        <!-- カード4:Dさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-04 block" src="/assets/image/voices_04.jpg" alt="お客様Dさんの声">
+                            </div>
+                            <p class="text-center">Dさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+
+                        <!-- カード5:Eさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-05 block" src="/assets/image/voices_05.jpg" alt="お客様Eさんの声">
+                            </div>
+                            <p class="text-center">Eさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+
+                        <!-- カード6:Fさん -->
+                        <div class="card flex flex-col">
+                            <div class="avatar__wrapper inline-block">
+                                <img class="avatar-06 block" src="/assets/image/voices_06.jpg" alt="お客様Fさんの声">
+                            </div>
+                            <p class="text-center">Fさん</p>
+                            <p>
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- カード下ドット -->
+                    <div class="slider__dots flex justify-center items-center"></div>
+                </div>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- faqセクション -->
+        <section class="faq flex flex-col">
+            <h2 class="faq__heading text-center">
+                <span class="en block">Q&A</span>
+                <span class="block">よくあるご質問</span>
+            </h2>
+            <!-- アコーディオンメニュー：縦並び、カード×5 -->
+            <div class="faq__inner">
+                <div class="accordion">
+                    <button class="accordion__btn flex justify-between items-center">
+                        <span class="question flex">
+                            <span class="en mr-4">Q.</span>
+                            <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
+                        </span>
+                        <span class="icon triangle__down"></span>
+                    </button>
+                    <div class="accordion__content flex">
+                        <span class="en mr-4">A.</span>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                         </p>
                     </div>
-                    <div class="about__empty sm:hidden"></div>
                 </div>
-            </section>
 
-            <!-- voicesセクション -->
-            <section class="voices flex flex-col">
-                <h2 class="en text-center">Voices</h2>
-                <h3 class="text-center">お客様の声</h3>
-
-                <!-- カルーセル：カード×6 -->
-                <div class="slider flex items-center justify-center">
-                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <div class="slider__wrapper flex flex-col">
-                        <div class="slider__track flex sm:justify-center">
-                            <!-- カード1:Aさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-01 block"
-                                        src="/assets/image/voices_01.jpg"
-                                        alt="お客様Aさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Aさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-
-                            <!-- カード2:Bさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-02 block"
-                                        src="/assets/image/voices_02.jpg"
-                                        alt="お客様Bさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Bさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-
-                            <!-- カード3:Cさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-03 block"
-                                        src="/assets/image/voices_03.jpg"
-                                        alt="お客様Cさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Cさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-
-                            <!-- カード4:Dさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-04 block"
-                                        src="/assets/image/voices_04.jpg"
-                                        alt="お客様Dさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Dさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-
-                            <!-- カード5:Eさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-05 block"
-                                        src="/assets/image/voices_05.jpg"
-                                        alt="お客様Eさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Eさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-
-                            <!-- カード6:Fさん -->
-                            <div class="card flex flex-col">
-                                <div class="avatar__wrapper inline-block">
-                                    <img
-                                        class="avatar-06 block"
-                                        src="/assets/image/voices_06.jpg"
-                                        alt="お客様Fさんの声"
-                                    >
-                                </div>
-                                <p class="text-center">Fさん</p>
-                                <p>
-                                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                                </p>
-                            </div>
-                        </div>
-                        <!-- カード下ドット -->
-                        <div class="slider__dots flex justify-center items-center"></div>
-                    </div>
-                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </section>
-
-            <!-- faqセクション -->
-            <section class="faq flex flex-col">
-                <h2 class="en text-center">Q&A</h2>
-                <h3 class="text-center">よくあるご質問</h3>
-
-                <!-- アコーディオンメニュー：縦並び、カード×5 -->
-                <div class="faq__inner">
-                    <div class="accordion">
-                        <button class="accordion__btn flex justify-between items-center">
-                            <span class="question flex">
-                                <span class="en mr-4">Q.</span>
-                                <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
-                            </span>
-                            <span class="icon triangle__down"></span>
-                        </button>
-                        <div class="accordion__content flex">
-                            <span class="en mr-4">A.</span><p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion">
-                        <button class="accordion__btn flex justify-between items-center">
-                            <span class="question flex">
-                                <span class="en mr-4">Q.</span>
-                                <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
-                            </span>
-                            <span class="icon triangle__down"></span>
-                        </button>
-                        <div class="accordion__content flex">
-                            <span class="en mr-4">A.</span><p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion">
-                        <button class="accordion__btn flex justify-between items-center">
-                            <span class="question flex">
-                                <span class="en mr-4">Q.</span>
-                                <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
-                            </span>
-                            <span class="icon triangle__down"></span>
-                        </button>
-                        <div class="accordion__content flex">
-                            <span class="en mr-4">A.</span><p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion">
-                        <button class="accordion__btn flex justify-between items-center">
-                            <span class="question flex">
-                                <span class="en mr-4">Q.</span>
-                                <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
-                            </span>
-                            <span class="icon triangle__down"></span>
-                        </button>
-                        <div class="accordion__content flex">
-                            <span class="en mr-4">A.</span><p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion">
-                        <button class="accordion__btn flex justify-between items-center">
-                            <span class="question flex">
-                                <span class="en mr-4">Q.</span>
-                                <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
-                            </span>
-                            <span class="icon triangle__down"></span>
-                        </button>
-                        <div class="accordion__content flex">
-                            <span class="en mr-4">A.</span><p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        </div>
+                <div class="accordion">
+                    <button class="accordion__btn flex justify-between items-center">
+                        <span class="question flex">
+                            <span class="en mr-4">Q.</span>
+                            <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
+                        </span>
+                        <span class="icon triangle__down"></span>
+                    </button>
+                    <div class="accordion__content flex">
+                        <span class="en mr-4">A.</span>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
                     </div>
                 </div>
-            </section>
 
-            <!-- prセクション -->
-            <div class="pr-second flex items-center justify-center">
-                <div class="pr__inner flex justify-between sm:flex-col">
-                    <div class="flex flex-col">
-                        <h3 class="sm:text-center">キラメキクリーム</h3>
-                        <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
+                <div class="accordion">
+                    <button class="accordion__btn flex justify-between items-center">
+                        <span class="question flex">
+                            <span class="en mr-4">Q.</span>
+                            <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
+                        </span>
+                        <span class="icon triangle__down"></span>
+                    </button>
+                    <div class="accordion__content flex">
+                        <span class="en mr-4">A.</span>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
                     </div>
-                    <a href="/" class="pr__btn inline-block text-center">オンラインショップへ</a>
-                    <a href="/cart/" class="pr__btn inline-block text-center">購入する</a>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion__btn flex justify-between items-center">
+                        <span class="question flex">
+                            <span class="en mr-4">Q.</span>
+                            <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
+                        </span>
+                        <span class="icon triangle__down"></span>
+                    </button>
+                    <div class="accordion__content flex">
+                        <span class="en mr-4">A.</span>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion__btn flex justify-between items-center">
+                        <span class="question flex">
+                            <span class="en mr-4">Q.</span>
+                            <span class="font-normal jp">テキストが入ります。テキストが入ります。テキストが入ります。</span>
+                        </span>
+                        <span class="icon triangle__down"></span>
+                    </button>
+                    <div class="accordion__content flex">
+                        <span class="en mr-4">A.</span>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- scrollボタン：ページTOPまで戻る -->
-            <button id="scrollToTopBtn" class="scroolbutton">
-                <i class="fa-solid fa-arrow-up"></i>
-            </button>
-
-        </main>
-
-        <!--フッター-->
-        <footer class="footer flex items-center">
-            <div class="footer__inner flex items-center justify-between  sm:flex-col sm:justify-center">
-                <a href="/" class="logo"><img class="block" src="/assets/image/footer__logo.png" alt="Kira-meki"></a>
-                <div class="footer__info flex items-center sm:items-center">
-                    <a href="/company/"><p>会社概要</p></a>
-                    <a href="/privacy-policy/"><p>個人情報保護ポリシー</p></a>
-                    <a href="/contact/"><p>お問い合わせ</p></a>
+        <!-- prセクション -->
+        <div class="pr-second flex items-center justify-center">
+            <div class="pr__inner flex justify-between sm:flex-col">
+                <div class="flex flex-col">
+                    <h3 class="sm:text-center">キラメキクリーム</h3>
+                    <p class="sm:text-center">税込<span class="text__space"> </span>4,000円</p>
                 </div>
-                <p class="footer__text block flex text-center items-center">
-                    © 2023 Kira-meki Inc. All rights reserved.
-                </p>
+                <a href="/" class="pr__btn inline-block text-center">オンラインショップへ</a>
+                <a href="/cart/" class="pr__btn inline-block text-center">購入する</a>
             </div>
-        </footer>
+        </div>
 
-        <!-- jsの読み込み（ES6モジュール構文使用） -->
-        <script type="module" src="/assets/scripts/script.js"></script>
-    </body>
+        <!-- scrollボタン：ページTOPまで戻る -->
+        <button id="scrollToTopBtn" class="scroolbutton">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+    </main>
+
+    <!--フッター-->
+    <footer class="footer flex items-center">
+        <div class="footer__inner flex items-center justify-between  sm:flex-col sm:justify-center">
+            <a href="/" class="logo"><img class="block" src="/assets/image/footer__logo.png" alt="Kira-meki"></a>
+            <div class="footer__info flex items-center sm:items-center">
+                <a href="/company/">
+                    <p>会社概要</p>
+                </a>
+                <a href="/privacy-policy/">
+                    <p>個人情報保護ポリシー</p>
+                </a>
+                <a href="/contact/">
+                    <p>お問い合わせ</p>
+                </a>
+            </div>
+            <p class="footer__text block flex text-center items-center">
+                © 2023 Kira-meki Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- jsの読み込み（ES6モジュール構文使用） -->
+    <script type="module" src="/assets/scripts/script.js"></script>
+</body>
+
 </html>
