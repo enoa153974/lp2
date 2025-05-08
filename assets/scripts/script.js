@@ -7,14 +7,14 @@ import {
 } from './components/behaviors/smoothScroll.js';
 
 import {
-    slider
+    initSlider
 } from './components/slider/slider.js';
 
 //ui.jsからハンバーガーメニューのとタブメニューの関数をインポートする
-    window.addEventListener('DOMContentLoaded', () => {
-        // HTML読み込みが終わったあとに実行される処理
-        scrollToTopBtn();
-        slider();
-        accordion();
-    });
+window.addEventListener('DOMContentLoaded', () => {
+    // HTML読み込みが終わったあとに実行される処理
+    scrollToTopBtn();
+    accordion();
+    initSlider();
+});
 

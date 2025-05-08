@@ -52,7 +52,16 @@
         rel="stylesheet">
     <!--アイコンフォント（fontFontAwesome）の読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <!-- 自作のカスタムスタイル（上書き用） -->
+    <link rel="stylesheet" href="/assets/scripts/components/slider/slider.css">
 </head>
+
 
 <body>
     <!-- ヘッダー -->
@@ -119,10 +128,11 @@
             <div class="slider flex items-center justify-center">
                 <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
                 <div class="slider__wrapper flex flex-col">
-                    <div class="slider__track flex sm:justify-center">
+
+                    <div class="slider__track autoplay flex sm:justify-center">
                         <!-- カード1:Aさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-01 block" src="/assets/image/voices_01.jpg" alt="お客様Aさんの声">
                             </div>
                             <p class="text-center">Aさん</p>
@@ -133,7 +143,7 @@
 
                         <!-- カード2:Bさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-02 block" src="/assets/image/voices_02.jpg" alt="お客様Bさんの声">
                             </div>
                             <p class="text-center">Bさん</p>
@@ -144,7 +154,7 @@
 
                         <!-- カード3:Cさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-03 block" src="/assets/image/voices_03.jpg" alt="お客様Cさんの声">
                             </div>
                             <p class="text-center">Cさん</p>
@@ -155,7 +165,7 @@
 
                         <!-- カード4:Dさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-04 block" src="/assets/image/voices_04.jpg" alt="お客様Dさんの声">
                             </div>
                             <p class="text-center">Dさん</p>
@@ -166,7 +176,7 @@
 
                         <!-- カード5:Eさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-05 block" src="/assets/image/voices_05.jpg" alt="お客様Eさんの声">
                             </div>
                             <p class="text-center">Eさん</p>
@@ -177,7 +187,7 @@
 
                         <!-- カード6:Fさん -->
                         <div class="card flex flex-col">
-                            <div class="avatar__wrapper inline-block">
+                            <div class="avatar__wrapper block">
                                 <img class="avatar-06 block" src="/assets/image/voices_06.jpg" alt="お客様Fさんの声">
                             </div>
                             <p class="text-center">Fさん</p>
@@ -318,6 +328,13 @@
         </div>
     </footer>
 
+    <!--jQueryの読み込み-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- jsの読み込み（ES6モジュール構文使用） -->
     <script type="module" src="/assets/scripts/script.js"></script>
 </body>

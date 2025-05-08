@@ -1,30 +1,26 @@
-.slider {
-    width: 100%;
-    max-width: 72.25rem;
-    height: auto;
-    margin: 2.125rem auto 0;
-}
+@import url('/assets/style/variables.css');
 
 .slider__wrapper {
-    width: 61.25rem; /* 320px × 3 */
-    max-width: clamp(20rem, 77.07vw, 72.25rem); /* 1500pxで1156pxになる可変幅 */
+    width: 980px;
+    max-width: clamp(20rem, 77.07vw, 72.25rem);
+    margin-top: 40px;
     overflow: hidden;
 }
 
-.slider__track {
-    width: 100%;
-    margin: 0 auto;
-    transition: transform .8s ease;
+.slick-track {
+    gap: 40px;
 }
 
 .card {
-    flex-shrink: 0;
-    width: calc((100% - 5rem) / 3); /* カード3枚 + margin-right: 40px × 2 */
+    width: clamp(16.25rem, 20vw, 18.75rem);
+    /* 最小260px、中間20vw、最大300px */
     height: 24.25rem;
+    flex-shrink: 0;
+    background-color: #dbf7f9;
     padding: clamp(1.5rem, 2.667vw, 2.5rem) clamp(.625rem, 1.067vw, 1rem);
-    margin-right: 2.5rem;
-    font-size: 2rem;
-    background: #dbf7f9;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .avatar__wrapper {
@@ -45,42 +41,51 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
-    transform: scale(1.4) translateX(-10%) translateY(9%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.4) translateX(-10%) translateY(9%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-02 {
-    transform: scale(1.5) translateX(4%) translateY(13%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.5) translateX(4%) translateY(13%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-03 {
-    transform: scale(1.6) translateX(-6%) translateY(10%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.6) translateX(-6%) translateY(10%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-04 {
-    transform: scale(1.4) translateX(0%) translateY(10%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.4) translateX(0%) translateY(10%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-05 {
-    transform: scale(1) translateX(0%) translateY(0%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1) translateX(0%) translateY(0%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .avatar-06 {
-    transform: scale(1.5) translateX(0%) translateY(8%); /* アップ倍率、画像トリミング位置調整 */
+    transform: scale(1.5) translateX(0%) translateY(8%);
+    /* アップ倍率、画像トリミング位置調整 */
 }
 
 .card p {
-    font-size: var(--font-size-base);
+    font-size: 15px;
+    margin-bottom: 16px;
 }
 
 .card p:last-child {
-    margin-top: var(--spacing-sm);
+    font-size: 16px;
+    margin: 0;
     line-height: 1.75;
+    text-align: left;
 }
 
 .prev {
     width: 3rem;
     height: 3rem;
-    margin: 10.3125rem auto auto 0;
+    margin-right: 40px;
     font-size: 1.5rem;
     color: #fff;
     background-color: #00afbf;
@@ -91,7 +96,7 @@
 .next {
     width: 3rem;
     height: 3rem;
-    margin: 10.3125rem 0 auto auto;
+    margin-left: 40px;
     font-size: 1.5rem;
     color: #fff;
     background-color: #00afbf;
@@ -104,82 +109,42 @@
     opacity: .6;
 }
 
-/* == スライド下ドット == */
-.slider__dots {
-    gap: .5rem;
-    width: 100%;
-    margin-top: 1.5rem;
+/* ドットコンテナ */
+.slick-dots ul {
+    gap: 8px;
+    position: static;
 }
 
-.slider__dot {
-    width: .625rem;
-    height: .625rem;
-    appearance: none; /* Safari対策 */
-    cursor: pointer;
+.slick-dots li {
+    margin-right: 8px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+/* 各ドットボタン */
+.slick-dots li button {
+    width: 9px;
+    height: 9px;
     background-color: #eee;
     border-radius: 50%;
-    transition: background-color .3s ease;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 0;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: static;
 }
 
-.slider__dot.active {
+.slick-dots li.slick-active button {
     background-color: #00afbf;
 }
 
-/* レスポンシブ対応（1枚表示） */
-@media (width <= 47.9375rem) {
-    /* ブレイクポイント767px */
-    .slider {
-        margin-top: 1.75rem;
-    }
-
-    .slider__wrapper {
-        max-width: 17.5rem;
-    }
-
-    .card {
-        width: 17.5rem;
-        height: 21.5rem;
-        padding: 1.75rem .9375rem;
-        margin-right: 0;
-    }
-
-    .slider__track {
-        width: auto;
-    }
-
-    .card p {
-        margin-top: .3125rem;
-    }
-
-    .card p:last-child {
-        line-height: 2;
-    }
-
-    .prev {
-        width: 2rem;
-        height: 2rem;
-        margin-top: 9.6875rem;
-        margin-right: .4375rem;
-        font-size: 1.125rem;
-        line-height: 1.9;
-    }
-
-    .next {
-        width: 2rem;
-        height: 2rem;
-        margin-top: 9.6875rem;
-        margin-left: .4375rem;
-        font-size: 1.125rem;
-        line-height: 1.9;
-    }
-
-    .avatar__wrapper {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .slider__dots {
-        gap: .4rem;
-        margin-top: 1rem;
-    }
+/* Slickのデフォルトの黒丸を消す */
+.slick-dots li button:before {
+    display: none;
+    content: none;
 }
