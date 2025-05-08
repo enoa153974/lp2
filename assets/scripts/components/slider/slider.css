@@ -1,18 +1,19 @@
 @import url('/assets/style/variables.css');
 
+/* === デバッグ用各要素アウトライン === */
+* {
+    outline: 1px solid red;
+}
+
 .slider__wrapper {
     width: 980px;
-    max-width: clamp(20rem, 77.07vw, 72.25rem);
+    max-width: 100%;
     margin-top: 40px;
     overflow: hidden;
 }
 
-.slick-track {
-    gap: 40px;
-}
-
 .card {
-    width: clamp(16.25rem, 20vw, 18.75rem);
+    width: clamp(200px, 20vw, 300px);
     /* 最小260px、中間20vw、最大300px */
     height: 24.25rem;
     flex-shrink: 0;
@@ -110,9 +111,9 @@
 }
 
 /* ドットコンテナ */
-.slick-dots ul {
-    gap: 8px;
+.slick-dots {
     position: static;
+    width: 100%;
 }
 
 .slick-dots li {
@@ -147,4 +148,64 @@
 .slick-dots li button:before {
     display: none;
     content: none;
+}
+
+
+/* レスポンシブ対応（1枚表示） */
+@media (width <=47.9375rem) {
+
+    /* ブレイクポイント767px */
+    .slider {
+        margin-top: 1.75rem;
+    }
+
+    .slider__wrapper {
+        max-width: 17.5rem;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: 21.5rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 28px 15px;
+    }
+
+    .card p {
+        margin-top: .3125rem;
+    }
+
+    .card p:last-child {
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .prev {
+        width: 2rem;
+        height: 2rem;
+        margin-right: .4375rem;
+        margin-bottom: 32px;
+        font-size: 1.125rem;
+        line-height: 1.9;
+    }
+
+    .next {
+        width: 2rem;
+        height: 2rem;
+        margin-left: .4375rem;
+        margin-bottom: 32px;
+        font-size: 1.125rem;
+        line-height: 1.9;
+    }
+
+    .avatar__wrapper {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .slider__dots {
+        gap: .4rem;
+        margin-top: 1rem;
+    }
 }
