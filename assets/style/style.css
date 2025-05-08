@@ -245,12 +245,6 @@ body {
   letter-spacing: .06em;
 }
 
-.voices__slide {
-  width: 100%;
-  max-width: 75rem;
-  height: auto;
-}
-
 /* === faqセクション === */
 
 /* アコーディオンメニューのデザインはaccordion.cssにて */
@@ -474,7 +468,7 @@ body {
     width: 100%;
     height: auto;
     padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 0;
   }
 
   .voices .voices__heading span {

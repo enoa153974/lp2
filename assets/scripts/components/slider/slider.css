@@ -1,12 +1,9 @@
 @import url('/assets/style/variables.css');
 
-/* === デバッグ用各要素アウトライン === */
-* {
-    outline: 1px solid red;
-}
-
 .slider__wrapper {
     width: 980px;
+    height: auto;
+    max-height: 421px;
     max-width: 100%;
     margin-top: 40px;
     overflow: hidden;
@@ -114,10 +111,10 @@
 .slick-dots {
     position: static;
     width: 100%;
+    gap: 8px;
 }
 
 .slick-dots li {
-    margin-right: 8px;
     padding: 0;
     width: auto;
     height: auto;
@@ -185,7 +182,7 @@
         width: 2rem;
         height: 2rem;
         margin-right: .4375rem;
-        margin-bottom: 32px;
+        margin-bottom: 62px;
         font-size: 1.125rem;
         line-height: 1.9;
     }
@@ -194,7 +191,7 @@
         width: 2rem;
         height: 2rem;
         margin-left: .4375rem;
-        margin-bottom: 32px;
+        margin-bottom: 62px;
         font-size: 1.125rem;
         line-height: 1.9;
     }
