@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.css\"",
-    "lint:check": "stylelint \"**/*.css\" --quiet"
+    "lint:check": "stylelint \"**/*.css\" --quiet",
+    "eslint": "eslint \"assets/scripts/**/*.js\"",
+    "eslint:fix": "eslint \"assets/scripts/**/*.js\" --fix"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,9 @@
   },
   "homepage": "https://github.com/enoa153974/lp2#readme",
   "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
     "stylelint": "^16.19.1",
     "stylelint-config-recess-order": "^6.0.0",
     "stylelint-config-standard": "^38.0.0"
