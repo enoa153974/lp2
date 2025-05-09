@@ -27,7 +27,7 @@
 }
 
 .accordion.open .accordion__content {
-  max-height: 400px;
+  max-height: 25rem;
 }
 
 .question span {
@@ -71,7 +71,7 @@
 @media screen and (width <=47.9375rem) {
   /* ブレイクポイント767px */
   .accordion {
-    padding: 20px 1rem;
+    padding: 1.25rem 1rem;
     margin-bottom: 1.25rem;
   }
 
@@ -95,7 +95,7 @@
 
   .accordion.open .accordion__content p {
     margin-top: .8125rem;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     font-size: .9375rem;
     line-height: 1.8;
   }

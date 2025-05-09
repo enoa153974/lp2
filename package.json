@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.css\"",
     "lint:check": "stylelint \"**/*.css\" --quiet",
+    "lint:fix": "stylelint \"**/*.css\" --fix",
     "eslint": "eslint \"assets/scripts/**/*.js\"",
     "eslint:fix": "eslint \"assets/scripts/**/*.js\" --fix"
   },

@@ -24,6 +24,7 @@ export function toggleClass(element, className) {
 export function addClass(element, className) {
     element.classList.add(className);
 }
+
 // 新しい要素(element)を作成する関数
 //tagNameの要素をclassNameかtextを付けて作成する（tagName,）className or text)
 //【createElement(element, className か text) 】で使用

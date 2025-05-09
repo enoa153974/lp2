@@ -1,6 +1,6 @@
 //これはUI表示や見た目の処理をまとめたファイルです。
 import { qs, qsa } from './utils.js';
-import { toggleClass, removeClass } from './utils.js';
+import { toggleClass, removeClass, addClass } from './utils.js';
 import { smoothScrollToTarget } from './utils.js';
 
 //ハンバーガーメニューのスライドの処理(script.jsheへinitHamburger関数をエクスポートできるようにする)
