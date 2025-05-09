@@ -252,10 +252,9 @@ body {
 .faq {
   width: 100%;
   height: auto;
-
+  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background: linear-gradient(to right, #f4ffe8, #c6f0fe);
-  padding-top: 2.5rem;
 }
 
 .faq .faq__heading span {
@@ -397,10 +396,11 @@ body {
 
   .hero__inner {
     top: 50%;
+
     /* 親の中央 */
     left: 50%;
-    transform: translate(-57%, 140%);
     max-width: 18.75rem;
+    transform: translate(-57%, 140%);
   }
 
   .hero__text h1 {
